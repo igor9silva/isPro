@@ -17,6 +17,12 @@
     "paths": {
       "~/*": ["./src/*"]
     },
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    },
     "noEmit": true
   }
 }

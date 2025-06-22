@@ -6,8 +6,8 @@ export const Route = createFileRoute("/")({
 
 function RouteComponent() {
   return (
-    <>
-      <h2>hello world</h2>
+    <main className="w-fit max-w-600px mx-auto p-4">
+      <h1>AGI achieved; what now?</h1>
       <p>this is a test</p>
       <p>this is another test</p>
       <ul>
@@ -22,6 +22,6 @@ function RouteComponent() {
         <li>item 2</li>
         <li>item 3</li>
       </ol>
-    </>
+    </main>
   );
 }

@@ -1,9 +1,34 @@
-/* @tailwind base; */
-/* @tailwind components;
-@tailwind utilities; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   color-scheme: light dark;
 }
-/* @layer base {
-} */
+
+@layer base {
+  * {
+    @apply font-mono;
+  }
+  h1 {
+    @apply text-2xl font-bold my-4;
+  }
+  p {
+    @apply text-sm my-2;
+  }
+  a {
+    @apply underline;
+  }
+  button {
+    @apply px-4 py-2 cursor-pointer;
+  }
+  ul {
+    @apply list-disc ps-10;
+  }
+  ol {
+    @apply list-decimal ps-10;
+  }
+  li {
+    @apply my-1;
+  }
+}

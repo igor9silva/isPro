@@ -8,25 +8,22 @@ html {
 
 @layer base {
   * {
-    @apply font-sans;
+    @apply font-sans border-border;
   }
   h1 {
-    @apply text-2xl font-bold my-6;
+    @apply text-4xl font-bold my-6;
   }
   h2 {
-    @apply text-xl font-bold my-4 mt-8;
+    @apply text-3xl font-bold my-4 mt-12;
+  }
+  section {
+    @apply space-y-4;
   }
   p {
-    @apply text-sm my-3 leading-relaxed;
+    @apply leading-relaxed;
   }
   blockquote {
-    margin: 1em 0;
-    padding-left: 1em;
-    border-left: 3px solid #ccc;
-    font-style: italic;
-  }
-  blockquote p {
-    @apply my-2;
+    @apply my-4 pl-4 border-l-2 border-gray-300 dark:border-gray-600 italic;
   }
   a {
     @apply underline;
@@ -44,11 +41,7 @@ html {
     @apply my-2 leading-relaxed;
   }
   code {
-    @apply font-mono;
-    background-color: #f5f5f5;
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
-    font-size: 0.9em;
+    @apply font-mono bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm;
   }
   img {
     @apply my-6 max-w-full h-auto;
@@ -105,63 +98,5 @@ html {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    code {
-      background-color: #333;
-    }
-
-    blockquote {
-      border-left-color: #666;
-    }
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-}
-
-.width-toggle-btn {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.75rem;
-  background-color: #ffffff;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 1000;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.width-toggle-btn:hover {
-  background-color: #f9fafb;
-  border-color: #9ca3af;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.width-toggle-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-  .width-toggle-btn {
-    background-color: #374151;
-    border-color: #6b7280;
-    color: #f9fafb;
-  }
-
-  .width-toggle-btn:hover {
-    background-color: #4b5563;
-    border-color: #9ca3af;
   }
 }

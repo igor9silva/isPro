@@ -2,12 +2,6 @@
 export default {
   darkMode: ["class"],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  safelist: [
-    // Include ALL Tailwind classes - disables purging completely
-    {
-      pattern: /.*/,
-    },
-  ],
   plugins: [require("tailwindcss-animate")],
   theme: {
     extend: {

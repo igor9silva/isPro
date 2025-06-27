@@ -37,7 +37,7 @@ function Main() {
 				{isFullWidth ? <Shrink /> : <Expand />}
 			</Button>
 
-			<main
+			<article
 				className="mx-auto p-4 transition-[max-width] duration-150 ease-out"
 				style={{ maxWidth: isFullWidth ? "100vw" : "64rem" }}
 			>
@@ -46,6 +46,18 @@ function Main() {
 				</header>
 
 				<section>
+					<p>
+						First of all, yes. I'm calling it.
+						<p>
+							<strong>AGI has been achieved.</strong>
+						</p>
+					</p>
+
+					<br />
+					<br />
+
+					<p>But...</p>
+
 					<p>
 						Let's first address what AGI — Artificial General Intelligence — is.
 					</p>
@@ -74,20 +86,19 @@ function Main() {
 					</blockquote>
 
 					<p>
-						Considering the focus on <strong>intelligence</strong>, it's natural
-						to think of it as a model. More specifically a large language model,
+						Considering just <strong>intelligence</strong>, it's natural
+						to think of it as a model. More specifically, a large language model;
 						as those are the ones that feel intelligent today.
 					</p>
 
 					<p>
 						But here is the thing: by that definition, it's been achieved long
-						ago. Likely with the introduction of GPT-4, and it's easy to
-						evidence that no single human could beat it on a wide test.
+						ago. Likely with the introduction of GPT-4.
 					</p>
 
 					<p>
-						By wide I mean on a mixed range of disciplines, industries, areas,
-						whatever.
+						No single human could beat no single large model on a wide test (as
+						in a mixed range of disciplines, industries, areas, whatever).
 					</p>
 
 					<p>In fact, let's exercise this now.</p>
@@ -95,7 +106,7 @@ function Main() {
 					<p>
 						I've asked 4 questions to GPT 4.1 mini (the worst currently
 						available model on ChatGPT), plus a double check by o3 (which is a
-						system, not a model — more on that below).
+						system, not just a model — <em>more on that below</em>).
 					</p>
 
 					<ol>
@@ -138,14 +149,15 @@ function Main() {
 					</ol>
 
 					<p>
-						<Link href="/media/can-you.png">Can you</Link> answer them all?
+						<p><Link href="/media/can-you.png">Can you</Link> provide better answers to all of them?</p>
+						<p>	To any of them?</p>
+						<p>Can anyone?</p>
 					</p>
 
-					<p>Can anyone?</p>
-
-					<p>Speaking for myself, I can barely understand the questions.</p>
-
-					<p>Maybe a PhD could answer... one of them.</p>
+					<p>
+						Speaking for myself, I can barely understand the questions. Maybe a
+						PhD could answer better... <strong>one of them.</strong>
+					</p>
 
 					<p>
 						Of course if I had an infinite amount of time and access to all
@@ -158,6 +170,12 @@ function Main() {
 						like if you replied instantly, word by word, with no prior search,
 						no backspace, no drafting; nothing. Just pure instant answer like
 						you do when asked what's 2+2.
+					</p>
+
+					<p>Intelligence-wise, no single human beats GPT-4.</p>
+
+					<p>
+						<strong>AGI has been achieved.</strong>
 					</p>
 				</section>
 
@@ -214,8 +232,7 @@ function Main() {
 
 					<p>
 						So <strong>intelligence</strong> — the ability to coherently predict
-						the future — plus the drive to achieve something,{" "}
-						<strong>is not enough</strong>.
+						the future — <strong>is not enough</strong>.
 					</p>
 
 					<p>
@@ -297,29 +314,100 @@ function Main() {
 					<p>
 						Those are o3 results on a very popular benchmark for AGI —{" "}
 						<Link href="https://arcprize.org/leaderboard">ARC-AGI-1</Link>. Note
-						that adding more resources (budget) results in a better score, but
-						each step improves it less — effectively getting more and more
-						expensive the more you iterate.
+						that adding more budget (shown as <code>low</code>,{" "}
+						<code>medium</code>, <code>high</code>) results in a better score,
+						but each step improves it less — <strong>increasingly expensive, never
+							capped</strong>.
 					</p>
 
 					<p>
-						That leads us into the conclusion that virtually any task is doable,{" "}
-						<strong>given enough resources</strong>.
-					</p>
-
-					<p>
-						The real question is: <strong>is it viable?</strong>
-					</p>
-
-					<p>
-						I should also mention that there is a second hidden cost:{" "}
+						I should also mention that there is a second and hidden cost:{" "}
 						<strong>time</strong>. The ultimate nature currency!
 					</p>
 
 					<p>
-						So from now on, I'll refer to the combined cost of time and money as{" "}
+						So, from now on, I'll refer to the combined cost of time and money as{" "}
 						<strong>energy</strong>.
 					</p>
+
+					<br />
+
+					<blockquote>
+						<p>
+							"Ok so intelligence plus a loop. We have that. <strong>Can I quit my job?</strong>" — you rn
+						</p>
+					</blockquote>
+
+					<p>
+						Not yet, but we're getting there. Stay with me.
+					</p>
+
+
+					<section>
+						<h2>On collaboration</h2>
+
+						<p>
+							Benchmarks, like ARC-AGI-1, are a set of tests to evaluate and compare models performance.
+						</p>
+
+						<p>
+							Pretty much like how we test humans, they're usually performed with no access to external tools or help of any kind.
+						</p>
+
+						<p>
+							It's the equivalent of sitting down with a pen and paper. You can think as much as you want (within the test limits), but you can't reach for a calculator or the internet or anyone else.
+						</p>
+
+						<p>
+							While it makes sense for comparison, benchmarks are not a good representation of what a system can produce. Again, similarly to how one can do great on a test but fail miserably on an actual job.
+						</p>
+
+						<p>
+							When we think of biological intelligences (<em>homo sapiens</em>),
+							we are used to believe that virtually <strong>anything is achievable</strong>.
+						</p>
+
+						<p>
+							I mean... I could do open heart surgery. Or design a reusable rocket. Or surf a monster wave.
+						</p>
+
+						<p>
+							Anyone could, given enough <strong><em>energy</em></strong> to learn and iterate.
+						</p>
+
+						<p>
+							I could go through college, residency, training... and, in about 10 years, perform such surgery. Just doesn't sound like a good deal.
+						</p>
+
+						<p>
+							But I could.
+						</p>
+
+						<p>
+						</p>
+						{/* <TODO>
+							- biological intelligences can do anything
+							- https://artificialanalysis.ai
+						</TODO> */}
+
+						<p>
+							That only works because of: <strong>knowledge</strong>.
+						</p>
+
+						<p>Knowledge is the foundation of intelligence.</p>
+						<p>
+							<strong>That also holds true for artificial intelligences.</strong>.
+							Give it enough energy
+						</p>
+
+						<p>
+							The real question is: <strong>is it viable?</strong>
+						</p>
+
+
+					</section>
+
+					<h1>WORK IN PROGRESS</h1>
 
 					<CollapsiblePanel
 						title="References & Further Reading"
@@ -348,7 +436,7 @@ function Main() {
 						]}
 					/>
 				</section>
-			</main>
+			</article >
 		</>
 	);
 }

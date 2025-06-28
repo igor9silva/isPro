@@ -69,20 +69,16 @@ function Main() {
 					</p>
 
 					<blockquote>
-						<p>
-							"[...] with capabilities that rival human cognitive functions"
-						</p>
+						"[...] with capabilities that rival human cognitive functions"
 					</blockquote>
 
 					<blockquote>
-						<p>
-							"[...] can demonstrate human-like intelligence across multiple
-							domains"
-						</p>
+						"[...] can demonstrate human-like intelligence across multiple
+						domains"
 					</blockquote>
 
 					<blockquote>
-						<p>"[...] that can match or exceed human reasoning abilities"</p>
+						"[...] that can match or exceed human reasoning abilities"
 					</blockquote>
 
 					<p>
@@ -353,27 +349,6 @@ function Main() {
 						<h2>Productivity is what matters</h2>
 
 						<p>
-							When we think of biological intelligences (<em>homo sapiens</em>),
-							we are used to believe that virtually <strong>anything is achievable</strong>.
-						</p>
-
-						<p>
-							I mean... I could do open heart surgery. Or design a reusable rocket. Or surf a monster wave.
-						</p>
-
-						<p>
-							I could go through college, residency, training... and, in about 10 years, perform such surgery to save a life. I could.
-						</p>
-
-						<p>
-							Anyone could, given enough <strong><em>energy</em></strong> to learn and iterate.
-						</p>
-
-						<p>
-							Yet, even with unlimited intelligence, we don't yet have AI systems performing such tasks.
-						</p>
-
-						<p>
 							Benchmarks, like ARC-AGI-1, are a set of tests to evaluate and compare models performance.
 						</p>
 
@@ -407,36 +382,73 @@ function Main() {
 									Do Y. — <code>iterating</code>
 								</li>
 								<li>
-									Check if X solved Y. — <code>evaluating</code>
+									Check if Y solved X. — <code>evaluating</code>
 								</li>
 								<li>
-									Store knowledge on if X solves Y or not. — <code>learning</code>
+									Store knowledge on if Y solves X or not. — <code>learning</code>
 								</li>
 								<li>
-									If not solved, start over. — <code>looping</code>
+									If not solved, start over (including the new knowledge). — <code>looping</code>
 								</li>
 							</ol>
 						</p>
 
 						<p>
-							When using a tool, you're essentially interfacing with someone else's (including your past self) knowledge, which was produced with their intelligence + their energy on lots of iterations.
+							When using a tool, you're essentially interfacing with someone else's (including your past self) knowledge, which was produced with their intelligence + their energy on lots of iterations, and served to you with most of the complexity abstracted away.
 						</p>
 
 						<p>
 							In fact, when you use a calculator, you're indirectly building on top of the previous assembling work to build it, plus the logistics to ship it, plus the engineering to design such tool, plus the mathematical principles observed and documented through centuries before those, and so on.
 						</p>
 
-						<p><strong>
-							Knowledge is the outcome of iterating on a problem, regardless of the result.
-						</strong></p>
-
 						<p>
-							AI systems — again very similarly to humans — can massively benefit from having access to humankind knowledge. Be it packed as a tool, a service, a text, an image, a link, ... it doesn't matter. <strong>More knowledge translates into more productivity.</strong>
+							<strong>Knowledge is the outcome of iterating on a problem</strong>, regardless of the result.
 						</p>
 
 						<p>
+							AI systems — again very similarly to humans — can massively benefit from having access to humankind knowledge. Be it packed as a tool, a service, a skill, a piece of text, an image, a link, ... it doesn't matter. <strong>More knowledge translates into more productivity</strong>, meaning the system is capable of producing more value.
+						</p>
+
+						<p>
+							Today, any modern LLM, from any provider, has intelligence enough to use any tool, or to learn how to use any tool using a feedback loop. Analogous to how you learn to drive by just driving.
+						</p>
+
+						<p>
+							When we think of biological intelligences (<em>homo sapiens</em>),
+							we are used to believe that virtually <strong>anything is achievable</strong>.
+						</p>
+
+						<p>
+							I mean... I could do open heart surgery. Or design a reusable rocket. Or surf a monster wave.
+						</p>
+
+						<p>
+							I could go through college, specialization, residency, training... and, in about 10 years, perform such surgery and save a life.
+						</p>
+
+						<p>
+							I could, as anyone could — given enough <strong><em>energy</em></strong> and access to humankind knowledge.
+						</p>
+
+						<p>
+							Similarly, an AI system <s>could</s> <strong>can</strong>.
+						</p>
+
+						<p>
+							Feed it with a task, tools and energy, put it on a loop, and it'll eventually get there. <strong>No task is impossible.</strong>
+						</p>
+
+						<p>
+							From that point on, we should not be discussing <strong>if</strong> AI can achieve this or that, but instead <strong>if it's viable</strong>.
+						</p>
+
+						{/* <p>
+							<code>intelligence + feedback loop + knowledge + energy = any task</code>
+						</p> */}
+
+						{/* <p>
 							One very interesting thing about knowledge is that it can be shared, and <strong>that is the key point to this whole thing</strong>.
-						</p>
+						</p> */}
 
 						{/* A known fact that'll increase future iterations capabilities.
 						And sharing them increases everyone's efficiency. */}
@@ -445,22 +457,55 @@ function Main() {
 							It is, and has always been, all about collaboration.
 						</p> */}
 
-						<p>
+						{/* <p>
 							In real life, <strong>the product</strong> (as in the <em>outcome</em>) <strong>is what matters</strong>. Nothing else.
-						</p>
+						</p> */}
+						{/* <blockquote>
+							"Fucking bullshit" - you rn
+						</blockquote> */}
+					</section>
 
-
-
-						<br />
+					<section>
+						<h2>It's happening!</h2>
 
 						<p>
-							So intelligence + a feedback loop + humankind knowledge + enough energy = any task.
+							Before you call bullshit on me, you should know that it <strong>is happening!</strong>
 						</p>
 
 						<p>
-							From that point on, we should not be discussing <strong>if</strong> AI can crack this or that, but instead <strong>if it's viable</strong> already.
+							Such systems are being deployed and used every day, all around the world, by millions of people, to solve very real and very valuable problems.
 						</p>
 
+						<p>
+							One of the best examples today is coding (writing software).
+						</p>
+
+						<p>
+							Coding is among the first industries to be completely disrupted by AI. Not because it's easy (as in would require less intelligence), but due to:
+							<ol>
+								<li>
+									Being mostly digital, making it easy to interface existing tools to AI.
+								</li>
+								<li>
+									Having a high aggregated value (developers used to make big bucks), making it worth even with today's inference prices.
+								</li>
+								<li>
+									Most industries run on software, making it universal. You can solve an untrackable amount of challenges with code.
+								</li>
+							</ol>
+						</p>
+
+						<p>apps doing it</p>
+						<p>cursor_spending.png</p>
+						<p>creating interfaces to AI is a whole new industry</p>
+
+						{/* <p>
+							As we just saw, putting an LLM on a loop makes it infinitely intelligent; but we need more. <strong>We need results.</strong> We need actual products being created and distributed. Real services being provided, helping real people solve real problems.
+						</p> */}
+					</section>
+
+
+					<section>
 						<h2>The next step</h2>
 
 						<p>

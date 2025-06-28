@@ -172,10 +172,14 @@ function Main() {
 						you do when asked what's 2+2.
 					</p>
 
-					<p>Intelligence-wise, no single human beats GPT-4.</p>
+					<p>Intelligence-wise, no single human beats a single GPT-4.</p>
 
 					<p>
 						<strong>AGI has been achieved.</strong>
+					</p>
+
+					<p>
+						Right?
 					</p>
 				</section>
 
@@ -184,11 +188,11 @@ function Main() {
 						So why I'm not <em>feeling the AGI</em>?
 					</h2>
 
-					<p>Or more importantly, why do I still have to work?!</p>
+					<p>Or, more importantly, why do I still have to work?!</p>
 
 					<p>
 						Well, let's picture what it takes to actually{" "}
-						<strong>create value</strong>. i.e. supply a product or provide a
+						<strong>produce value</strong>. i.e. supply a product or provide a
 						service that helps someone.
 					</p>
 
@@ -276,8 +280,6 @@ function Main() {
 						each iteration gets lower.
 					</p>
 
-					<p>It's that simple.</p>
-
 					<img src="../media/log-growth.png" alt="Logarithmic growth curve" />
 
 					<p>Think about how you write an email.</p>
@@ -312,7 +314,7 @@ function Main() {
 					<img src="../media/arc-agi.png" alt="ARC-AGI benchmark results" />
 
 					<p>
-						Those are o3 results on a very popular benchmark for AGI —{" "}
+						Those are o3 (lastest OpenAI model) results on a very popular benchmark for AGI —{" "}
 						<Link href="https://arcprize.org/leaderboard">ARC-AGI-1</Link>. Note
 						that adding more budget (shown as <code>low</code>,{" "}
 						<code>medium</code>, <code>high</code>) results in a better score,
@@ -320,47 +322,35 @@ function Main() {
 							capped</strong>.
 					</p>
 
+					<p>In other words, <strong>unlimited intelligence</strong>.</p>
+
 					<p>
-						I should also mention that there is a second and hidden cost:{" "}
-						<strong>time</strong>. The ultimate nature currency!
+						It's that simple, but keep in mind that "unlimited intelligence" is just as limited as your wallet.
 					</p>
 
 					<p>
-						So, from now on, I'll refer to the combined cost of time and money as{" "}
-						<strong>energy</strong>.
+						I should also mention that there is a secondary hidden cost: <strong>time</strong> — the ultimate nature currency!
+						So I'll refer to the combined cost of time and money as <strong>energy</strong> from now on.
 					</p>
 
 					<br />
 
-					<blockquote>
+					{/* <blockquote>
 						<p>
-							"Ok so intelligence plus a loop. We have that. <strong>Can I quit my job?</strong>" — you rn
+							"Unlimited? Can it do my taxes? lol" — you rn
 						</p>
+					</blockquote> */}
+					<blockquote>
+						<p>Until AI does my bookkeeping and files my taxes I don’t give a shit about it.</p>
+						<p>&mdash; @AtomicChild <Link href="https://twitter.com/AtomicChild/status/1839156050815070232?ref_src=twsrc%5Etfw">September 26, 2024</Link></p>
 					</blockquote>
 
 					<p>
-						Not yet, but we're getting there. Stay with me.
+						We're getting there. Stay with me.
 					</p>
 
-
 					<section>
-						<h2>On collaboration</h2>
-
-						<p>
-							Benchmarks, like ARC-AGI-1, are a set of tests to evaluate and compare models performance.
-						</p>
-
-						<p>
-							Pretty much like how we test humans, they're usually performed with no access to external tools or help of any kind.
-						</p>
-
-						<p>
-							It's the equivalent of sitting down with a pen and paper. You can think as much as you want (within the test limits), but you can't reach for a calculator or the internet or anyone else.
-						</p>
-
-						<p>
-							While it makes sense for comparison, benchmarks are not a good representation of what a system can produce. Again, similarly to how one can do great on a test but fail miserably on an actual job.
-						</p>
+						<h2>Productivity is what matters</h2>
 
 						<p>
 							When we think of biological intelligences (<em>homo sapiens</em>),
@@ -372,23 +362,133 @@ function Main() {
 						</p>
 
 						<p>
+							I could go through college, residency, training... and, in about 10 years, perform such surgery to save a life. I could.
+						</p>
+
+						<p>
 							Anyone could, given enough <strong><em>energy</em></strong> to learn and iterate.
 						</p>
 
 						<p>
-							I could go through college, residency, training... and, in about 10 years, perform such surgery. Just doesn't sound like a good deal.
+							Yet, even with unlimited intelligence, we don't yet have AI systems performing such tasks.
 						</p>
 
 						<p>
-							But I could.
+							Benchmarks, like ARC-AGI-1, are a set of tests to evaluate and compare models performance.
 						</p>
 
 						<p>
+							Pretty much like how we test humans, they're usually performed with no access to external tools or help of any kind.
 						</p>
-						{/* <TODO>
-							- biological intelligences can do anything
-							- https://artificialanalysis.ai
-						</TODO> */}
+
+						<p>
+							It's the equivalent of sitting down with a pen and paper. You can reason as much as you want (within the test limits), but you can't reach for a calculator or the internet or anyone else.
+						</p>
+
+						<p>
+							While it makes sense for comparison, benchmarks are not a good representation of <strong>what a system can produce</strong>. Again, similarly to how one can do great on a test but fail miserably on an actual job.
+						</p>
+
+						<p>
+							When facing <strong>a real problem in the real world</strong>, you should definitely use tools. Lots of them.
+						</p>
+
+						<p>
+							Tools, as a form of technology, <Link href="https://en.wikipedia.org/wiki/The_Beginning_of_Infinity">are really just knowledge</Link> — which can be produced by iterating on a task.
+						</p>
+
+						<p>
+							How it goes for solving X:
+							<ol>
+								<li>
+									"To solve X I'm going to do Y" — <code>reasoning</code>
+								</li>
+								<li>
+									Do Y. — <code>iterating</code>
+								</li>
+								<li>
+									Check if X solved Y. — <code>evaluating</code>
+								</li>
+								<li>
+									Store knowledge on if X solves Y or not. — <code>learning</code>
+								</li>
+								<li>
+									If not solved, start over. — <code>looping</code>
+								</li>
+							</ol>
+						</p>
+
+						<p>
+							When using a tool, you're essentially interfacing with someone else's (including your past self) knowledge, which was produced with their intelligence + their energy on lots of iterations.
+						</p>
+
+						<p>
+							In fact, when you use a calculator, you're indirectly building on top of the previous assembling work to build it, plus the logistics to ship it, plus the engineering to design such tool, plus the mathematical principles observed and documented through centuries before those, and so on.
+						</p>
+
+						<p><strong>
+							Knowledge is the outcome of iterating on a problem, regardless of the result.
+						</strong></p>
+
+						<p>
+							AI systems — again very similarly to humans — can massively benefit from having access to humankind knowledge. Be it packed as a tool, a service, a text, an image, a link, ... it doesn't matter. <strong>More knowledge translates into more productivity.</strong>
+						</p>
+
+						<p>
+							One very interesting thing about knowledge is that it can be shared, and <strong>that is the key point to this whole thing</strong>.
+						</p>
+
+						{/* A known fact that'll increase future iterations capabilities.
+						And sharing them increases everyone's efficiency. */}
+
+						{/* <p>
+							It is, and has always been, all about collaboration.
+						</p> */}
+
+						<p>
+							In real life, <strong>the product</strong> (as in the <em>outcome</em>) <strong>is what matters</strong>. Nothing else.
+						</p>
+
+
+
+						<br />
+
+						<p>
+							So intelligence + a feedback loop + humankind knowledge + enough energy = any task.
+						</p>
+
+						<p>
+							From that point on, we should not be discussing <strong>if</strong> AI can crack this or that, but instead <strong>if it's viable</strong> already.
+						</p>
+
+						<h2>The next step</h2>
+
+						<p>
+							As we just saw, putting an LLM on a loop makes it infinitely intelligent; but we need more. <strong>We need results.</strong>
+						</p>
+
+						<p>
+							We need actual products being created and distributed. Real services being provided, helping real people solve real problems.
+						</p>
+
+						<p>
+							For that, we need a system that can <strong>act</strong>, rather than just think.
+						</p>
+
+						<p>
+							A system that can learn continuously through it's interactions with the world. One that can <strong>adapt</strong> to any situation, learn new skills when needed, educate itself on new subjects, iterate on solutions for hours, days, maybe months!
+						</p>
+
+						<p>
+							From now on, I'll refer to such systems as <strong>companions</strong>.
+							<p className="text-xs text-muted-foreground">
+								Hey it's <Link className="decoration-wavy" href="/media/companions.mov">not the best term ever</Link>, but bad naming is an industry standard by now, so <strong>companion</strong> it is 😁
+							</p>
+						</p>
+
+
+
+						{/* ------------------------------------------------------------ */}
 
 						<p>
 							That only works because of: <strong>knowledge</strong>.

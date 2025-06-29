@@ -435,7 +435,7 @@ function Main() {
 						</p>
 
 						<p>
-							Feed it with a task, tools and energy, put it on a loop, and it'll eventually get there. <strong>No task is impossible.</strong>
+							Feed it with a task, proper tools and enough energy, put it on a loop, and it'll eventually get there. <strong>No task is impossible.</strong>
 						</p>
 
 						<p>
@@ -466,10 +466,91 @@ function Main() {
 					</section>
 
 					<section>
+						<h2>The cost situation</h2>
+
+						<p>
+							I could start with an elaborate argument on how the cost per unit of intelligence is already much lower on artificial intelligences than on biological ones, but it's not worth your time, given that <strong>inference cost is very quickly trending towards zero</strong>.
+						</p>
+
+						<p>
+							What you should know:
+							<ol>
+								<li>
+									You can run powerful models on your own hardware. Today.
+								</li>
+								<li>
+									The cost to use AI falls about 10x every 12 months. 1000x cheaper in 3 years.
+								</li>
+								<li>
+									Many companies are building specialized inference hardware, leading to faster and cheaper services.
+								</li>
+								<li>
+									Open-source models are constantly serving Pareto efficiency (cost per unit of intelligence), relative to state-of-the-art models.
+								</li>
+								<li>
+									AI will ultimately render money out of value, so let's not overthink this 😄
+								</li>
+							</ol>
+						</p>
+
+						<p>
+							Considering all of this, any use cases that are not yet viable, will be very very soon.
+						</p>
+
+						<p>
+							"Too cheap to meter", they say.
+						</p>
+
+						<CollapsiblePanel
+							title="Further Reading"
+							icon="📚"
+							references={[
+								{
+									url: "https://blog.samaltman.com/three-observations#:~:text=The%20cost%20to%20use%20a%20given%20level%20of%20AI%20falls%20about%2010x%20every%2012%20months%2C%20and%20lower%20prices%20lead%20to%20much%20more%20use.",
+									title: `"The cost to use a given level of AI falls about 10x every 12 months"`,
+									description: `Sam Altman on AI Cost.`,
+								},
+								{
+									url: "https://a16z.com/llmflation-llm-inference-cost/",
+									title: "LLMflation – LLM inference cost is going down fast ⬇️",
+									description: "from a16z.",
+								},
+								{
+									url: "https://x.com/ivanfioravanti/status/1917297053576663121",
+									title: "Qwen3 30B benchmark on Macs",
+									description: "by @ivanfioravanti",
+								},
+								{
+									url: "https://groq.com",
+									title: "Groq",
+									description: "Building specialized inference hardware for LLMs.",
+								},
+								{
+									url: "https://www.cerebras.ai",
+									title: "Cerebras",
+									description: "Building specialized inference hardware for LLMs.",
+								},
+							]}
+						/>
+
+					</section>
+
+					<section>
 						<h2>It's happening!</h2>
 
 						<p>
-							Before you call bullshit on me, you should know that it <strong>is happening!</strong>
+							Before you call bullshit on me, you should know that it <strong>is already happening!</strong>
+						</p>
+
+						<p>
+							By this I mean AGI. Or that thing everyone is picturing as AGI.
+						</p>
+
+						<img src="../media/agi-bool.png" alt="boolean AGI" />
+						<img src="../media/agi-continuum.png" alt="continuum AGI" />
+
+						<p>
+							It is happening every second of every day on every country of this planet. Continuously, rather than in any single moment.
 						</p>
 
 						<p>
@@ -481,7 +562,7 @@ function Main() {
 						</p>
 
 						<p>
-							Coding is among the first industries to be completely disrupted by AI. Not because it's easy (as in would require less intelligence), but due to:
+							Coding is among the first industries to be disrupted by AI. Not because it's easy (as in would require less intelligence), but due to:
 							<ol>
 								<li>
 									Being mostly digital, making it easy to interface existing tools to AI.
@@ -490,7 +571,7 @@ function Main() {
 									Having a high aggregated value (developers used to make big bucks), making it worth even with today's inference prices.
 								</li>
 								<li>
-									Most industries run on software, making it universal. You can solve an untrackable amount of challenges with code.
+									Most industries run on software, making it universal. You can solve an untrackable and ever-growing amount of challenges with code.
 								</li>
 							</ol>
 						</p>
@@ -577,6 +658,11 @@ function Main() {
 								url: "https://www.masterclass.com/articles/how-long-does-it-take-to-write-a-book",
 								title: "Stephen King on Writing Process",
 								description: "Professional writing habits",
+							},
+							{
+								url: "https://artificialanalysis.ai",
+								title: "Artificial Analysis",
+								description: "A comprehensive model benchmark compilation",
 							},
 						]}
 					/>

@@ -38,7 +38,7 @@ function Main() {
 			<Button
 				variant="ghost"
 				onClick={() => setIsFullWidth(!isFullWidth)}
-				className="hidden md:flex fixed top-4 right-4"
+				className="hidden lg:flex fixed top-4 right-4"
 			>
 				{isFullWidth ? <Shrink /> : <Expand />}
 			</Button>

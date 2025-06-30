@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as GenUiRouteImport } from './routes/gen-ui'
+import { Route as AgiRouteImport } from './routes/agi'
 import { Route as IndexRouteImport } from './routes/index'
 
 const GenUiRoute = GenUiRouteImport.update({
   id: '/gen-ui',
   path: '/gen-ui',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AgiRoute = AgiRouteImport.update({
+  id: '/agi',
+  path: '/agi',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,27 +31,31 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/agi': typeof AgiRoute
   '/gen-ui': typeof GenUiRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/agi': typeof AgiRoute
   '/gen-ui': typeof GenUiRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/agi': typeof AgiRoute
   '/gen-ui': typeof GenUiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/gen-ui'
+  fullPaths: '/' | '/agi' | '/gen-ui'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/gen-ui'
-  id: '__root__' | '/' | '/gen-ui'
+  to: '/' | '/agi' | '/gen-ui'
+  id: '__root__' | '/' | '/agi' | '/gen-ui'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AgiRoute: typeof AgiRoute
   GenUiRoute: typeof GenUiRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/gen-ui'
       fullPath: '/gen-ui'
       preLoaderRoute: typeof GenUiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agi': {
+      id: '/agi'
+      path: '/agi'
+      fullPath: '/agi'
+      preLoaderRoute: typeof AgiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AgiRoute: AgiRoute,
   GenUiRoute: GenUiRoute,
 }
 export const routeTree = rootRouteImport

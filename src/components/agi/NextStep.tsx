@@ -1,6 +1,6 @@
 import { Link } from "~/components/Link";
 
-export function NextStepSection() {
+export function NextStep() {
 	return (
 		<section>
 			<h2>The next step</h2>

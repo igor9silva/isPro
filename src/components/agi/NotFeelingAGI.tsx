@@ -1,6 +1,6 @@
 import { Link } from "~/components/Link";
 
-export function NotFeelingAgiSection() {
+export function NotFeelingAGI() {
 	return (
 		<section>
 			<h2>

@@ -1,6 +1,6 @@
 import { Link } from "~/components/Link";
 
-export function ItIsHappeningSection() {
+export function ItsHappening() {
 	return (
 		<section>
 			<h2>It is happening!</h2>

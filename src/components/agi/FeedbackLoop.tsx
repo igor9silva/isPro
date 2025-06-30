@@ -1,6 +1,6 @@
 import { Link } from "~/components/Link";
 
-export function FeedbackLoopSection() {
+export function FeedbackLoop() {
 	return (
 		<section>
 			<h2>So... a loop, huh?</h2>

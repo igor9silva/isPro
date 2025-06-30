@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Expand, Shrink } from "lucide-react";
 import { useEffect, useState } from "react";
-import { CostSituationSection } from "~/components/agi/CostSituationSection";
-import { FeedbackLoopSection } from "~/components/agi/FeedbackLoopSection";
-import { IntroSection } from "~/components/agi/IntroSection";
-import { ItIsHappeningSection } from "~/components/agi/ItIsHappeningSection";
-import { NextStepSection } from "~/components/agi/NextStepSection";
-import { NotFeelingAgiSection } from "~/components/agi/NotFeelingAgiSection";
-import { ProductivitySection } from "~/components/agi/ProductivitySection";
+import { CostSituation } from "~/components/agi/CostSituation";
+import { FeedbackLoop } from "~/components/agi/FeedbackLoop";
+import { Intro } from "~/components/agi/Intro";
+import { ItsHappening } from "~/components/agi/ItsHappening";
+import { NextStep } from "~/components/agi/NextStep";
+import { NotFeelingAGI } from "~/components/agi/NotFeelingAGI";
+import { Productivity } from "~/components/agi/Productivity";
 import { CollapsiblePanel } from "~/components/CollapsiblePanel";
 import { Button } from "~/components/ui/button";
 
@@ -51,13 +51,13 @@ function Main() {
 					<h1>AGI achieved; now what?</h1>
 				</header>
 
-				<IntroSection />
-				<NotFeelingAgiSection />
-				<FeedbackLoopSection />
-				<ProductivitySection />
-				<CostSituationSection />
-				<ItIsHappeningSection />
-				<NextStepSection />
+				<Intro />
+				<NotFeelingAGI />
+				<FeedbackLoop />
+				<Productivity />
+				<CostSituation />
+				<ItsHappening />
+				<NextStep />
 
 				<h1>WORK IN PROGRESS</h1>
 

@@ -1,6 +1,6 @@
 import { Link } from "~/components/Link";
 
-export function ProductivitySection() {
+export function Productivity() {
 	return (
 		<section>
 			<h2>Productivity is what matters</h2>

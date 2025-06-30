@@ -2,7 +2,7 @@
 import { CollapsiblePanel } from "~/components/CollapsiblePanel";
 import { Link } from "~/components/Link";
 
-export function CostSituationSection() {
+export function CostSituation() {
 	return (
 		<section>
 			<h2>The cost situation</h2>

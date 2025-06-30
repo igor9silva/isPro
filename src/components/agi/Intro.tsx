@@ -1,6 +1,6 @@
 import { Link } from "~/components/Link";
 
-export function IntroSection() {
+export function Intro() {
 	return (
 		<section>
 			<p>

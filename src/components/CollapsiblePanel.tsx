@@ -53,12 +53,12 @@ export function CollapsiblePanel({
 	const [isOpen, setIsOpen] = useState(defaultOpen);
 
 	return (
-		<div className={cn("my-8", className)}>
+		<div className={cn("my-4", className)}>
 			<div className="border border-border rounded-lg overflow-hidden bg-gray-50 dark:bg-neutral-900">
 				<button
 					type="button"
 					onClick={() => setIsOpen(!isOpen)}
-					className="w-full px-6 py-4 text-left flex items-center justify-between bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 dark:hover:bg-neutral-700 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+					className="w-full px-4 py-2 text-left flex items-center justify-between bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 dark:hover:bg-neutral-700 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
 				>
 					<div className="flex items-center gap-3">
 						{icon && <span className="text-xl">{icon}</span>}
@@ -75,7 +75,7 @@ export function CollapsiblePanel({
 				</button>
 
 				{isOpen && (
-					<div className="px-6 py-4 bg-gray-50 dark:bg-neutral-900 border-t border-gray-200 dark:border-neutral-700">
+					<div className="p-2 bg-gray-50 dark:bg-neutral-900 border-t border-gray-200 dark:border-neutral-700">
 						{references && <ReferenceList references={references} />}
 						{children}
 					</div>

@@ -48,13 +48,7 @@ function Main() {
 				<section>
 					<p>
 						First of all, yes. I'm calling it.
-						<p>
-							<strong>AGI has been achieved.</strong>
-						</p>
 					</p>
-
-					<br />
-					<br />
 
 					<p>But...</p>
 
@@ -174,15 +168,21 @@ function Main() {
 						<strong>AGI has been achieved.</strong>
 					</p>
 
+					<br />
+					<br />
+
 					<p>
 						Right?
 					</p>
+
 				</section>
 
 				<section>
 					<h2>
 						So why I'm not <em>feeling the AGI</em>?
 					</h2>
+
+					<p>...you'd ask me.</p>
 
 					<p>Or, more importantly, why do I still have to work?!</p>
 
@@ -337,7 +337,7 @@ function Main() {
 						</p>
 					</blockquote> */}
 					<blockquote>
-						<p>Until AI does my bookkeeping and files my taxes I don’t give a shit about it.</p>
+						<p>Until AI does my bookkeeping and files my taxes I don't give a shit about it.</p>
 						<p>&mdash; @AtomicChild <Link href="https://twitter.com/AtomicChild/status/1839156050815070232?ref_src=twsrc%5Etfw">September 26, 2024</Link></p>
 					</blockquote>
 
@@ -361,7 +361,7 @@ function Main() {
 						</p>
 
 						<p>
-							While it makes sense for comparison, benchmarks are not a good representation of <strong>what a system can produce</strong>. Again, similarly to how one can do great on a test but fail miserably on an actual job.
+							While it makes sense for comparison, benchmarks are not a good representation of <strong>what a system can produce</strong> (they're testing models, not systems, after all). Again, similarly to how one can do great on a test but fail miserably on an actual job.
 						</p>
 
 						<p>
@@ -410,8 +410,33 @@ function Main() {
 						</p>
 
 						<p>
-							Today, any modern LLM, from any provider, has intelligence enough to use any tool, or to learn how to use any tool using a feedback loop. Analogous to how you learn to drive by just driving.
+							Today, any modern LLM, from any provider, has intelligence enough to use any tool — or to learn how to use any tool through a feedback loop. <strong>Analogous to how one learns to drive by just driving.</strong>
 						</p>
+
+						<p>
+							A very interesting example is playing games. The 3 most popular models are playing Pokémon right now (live on Twitch), with <strong>no prior instructions</strong> on how the game works, it's mechanics nor it's goals.
+						</p>
+
+						<p>
+							All of them have demonstrated to be able finish the game using nothing but their intelligence, a feedback loop and tools such as moving and taking notes — very similar to how a human would do it.
+
+						</p>
+
+						<p>More details on their respective twitch channels:</p>
+						<ol>
+							<li>
+								<Link href="https://www.twitch.tv/claudeplayspokemon">Claude plays Pokémon</Link> - the OG
+
+							</li>
+							<li>
+								<Link href="https://www.twitch.tv/gemini_plays_pokemon">Gemini plays Pokémon</Link>
+							</li>
+							<li>
+								<Link href="https://www.twitch.tv/gpt_plays_pokemon">GPT plays Pokémon</Link>
+							</li>
+						</ol>
+
+						<br />
 
 						<p>
 							When we think of biological intelligences (<em>homo sapiens</em>),
@@ -479,7 +504,7 @@ function Main() {
 									You can run powerful models on your own hardware. Today.
 								</li>
 								<li>
-									The cost to use AI falls about 10x every 12 months. 1000x cheaper in 3 years.
+									The cost to use AI falls about 10x every 12 months. It got 1000x cheaper in 3 years. <span className="text-[0.5rem] text-muted-foreground">(suck it, Moore)</span>
 								</li>
 								<li>
 									Many companies are building specialized inference hardware, leading to faster and cheaper services.
@@ -494,7 +519,7 @@ function Main() {
 						</p>
 
 						<p>
-							Considering all of this, any use cases that are not yet viable, will be very very soon.
+							Considering all that, any use cases that are not yet viable, will be very very soon.
 						</p>
 
 						<p>
@@ -536,33 +561,47 @@ function Main() {
 					</section>
 
 					<section>
-						<h2>It's happening!</h2>
+						<h2>It is happening!</h2>
 
 						<p>
-							Before you call bullshit on me, you should know that it <strong>is already happening!</strong>
+							If you're waiting for a single, dramatic "AGI moment", <s>you're ngmi</s> you'll miss the real story. <strong>AGI isn't a switch that flips — but rather a continuum process that's happening right now</strong> — everywhere, every second.
 						</p>
 
 						<p>
-							By this I mean AGI. Or that thing everyone is picturing as AGI.
-						</p>
-
-						<img src="../media/agi-bool.png" alt="boolean AGI" />
-						<img src="../media/agi-continuum.png" alt="continuum AGI" />
-
-						<p>
-							It is happening every second of every day on every country of this planet. Continuously, rather than in any single moment.
+							It's not: <img src="../media/agi-bool.png" alt="boolean AGI" className="mt-1" />
 						</p>
 
 						<p>
-							Such systems are being deployed and used every day, all around the world, by millions of people, to solve very real and very valuable problems.
+							But: <img src="../media/agi-continuum.png" alt="continuum AGI" className="mt-1" />
 						</p>
 
 						<p>
-							One of the best examples today is coding (writing software).
+							Whether I was able to convince you that current models are AGI or not, it doesn't really matter.
 						</p>
 
 						<p>
-							Coding is among the first industries to be disrupted by AI. Not because it's easy (as in would require less intelligence), but due to:
+							<strong>Every layer of every industry is getting unimaginable and unprecedented efficiency gains</strong>, and that's awesome!
+						</p>
+
+
+						{/* <p>
+							Billions of human–AI and AI–AI interactions are happening every day, quietly adding efficiency to every layer of every industry.
+						</p> */}
+
+						<p>
+							The best way to observe this effect right now is in the software industry. The <strong>energy</strong> required to develop and maintain almost any kind of software has dropped by <strong>~80% in the last two years</strong>. I'll say it again: building software is <strong>80% CHEAPER TODAY THAN IT WAS TWO YEARS AGO</strong>. That's not an exaggeration, specially for consumer software.
+						</p>
+
+						<p>
+							It doesn't matter if there is a human in the loop or not. It doesn't matter how many engineering jobs were lost or not. It doesn't matter if you directly benefit from it or not.
+						</p>
+
+						<p>
+							Just one thing matters: building software is getting much cheaper, and <strong>that's good for everybody</strong>, as that translates into more iterations, more features, more products, more services, <strong>more value</strong>. For everyone.
+						</p>
+
+						<p>
+							Coding is among the first industries to collect those gains, but not because it's easy (as in would require less intelligence), but due to:
 							<ol>
 								<li>
 									Being mostly digital, making it easy to interface existing tools to AI.
@@ -576,15 +615,64 @@ function Main() {
 							</ol>
 						</p>
 
-						<p>apps doing it</p>
-						<p>cursor_spending.png</p>
-						<p>creating interfaces to AI is a whole new industry</p>
+						<p>
+							A few examples of products driving such efficiency gains are <Link href="https://cursor.com">Cursor</Link>, <Link href="https://anthropic.com/claude-code">Claude Code</Link>, <Link href="https://openai.com/codex/">Codex</Link> and many others. All of them work in a similar fashion to what we have described so far (loop, tools, knowledge, feedback).
+						</p>
+
+						<p>
+							But it's not stopping with computer programs. <strong>Every</strong> production chain, <strong>every</strong> supply chain, <strong>every</strong> good or service being provided is already exponentially collecting those gains.
+						</p>
+
+						<p>ChatGPT, when paired with <Link href="https://openai.com/index/introducing-o3-and-o4-mini/">o3 or o4-mini</Link>, also works similarly. During it's <em>Chain of Thoughts</em>, it does way more than just reasoning. It searches the web, write and run code, zoom into images and much more. You can even plug in your own tools via <Link href="https://www.anthropic.com/news/model-context-protocol">MCP</Link>, which is another project allowing knowledge sharing among apps, and has been gaining a lot of traction! <span className="text-xs text-muted-foreground">That's why <Link href="/media/systems.mp4">o3 is a system</Link>, not just a model.</span></p>
+
+						{/* <p>cursor_spending.png</p>
+						<p>creating interfaces to AI is a whole new industry</p> */}
+
+						<p>
+							Think with me. The highest cost on virtually any industry is <strong>human labor</strong>, meaning that every second saved by using an AI system, from a simple copy/paste from/into ChatGPT up to a fully automated swarm of agents, saves energy and <strong>will eventually translate into cheaper products</strong>.
+						</p>
+
+						<br />
+
+						<blockquote>
+							"They're not coming for me though, lol"
+							<p>— my barber</p>
+						</blockquote>
+
+						<p>
+							Sometimes an image is worth a million words.
+							<img src="../media/jensen-and-the-robots.png" alt="Jensen Huang and an army of humanoid robots" className="my-1" />
+							<span className="text-muted-foreground text-sm">This is Jensen Huang, CEO of Nvidia, showing <strong>just a few of</strong> the humanoid robots being developed. They're coming.</span>
+						</p>
+
+						<p>
+							1. Think tasks, not jobs.
+						</p>
+						{/* 
+						<p>
+							This is a whole new industry: <strong>creating interfaces for AI companions</strong>. Apps like Cursor, ChatGPT, Claude, and MCP are not just products—they're the closest things we have to digital collaborators, and they're getting better every day. Google is now just a tool for companions. Tavily, EXA, Perplexity, and many more are building the connective tissue for this new world.
+						</p> */}
+						{/* 
+						<p>
+							Sam Altman recently said we should stop thinking in terms of models and start thinking in terms of <strong>systems</strong>—integrated, evolving, tool-using, feedback-driven entities. In his words: <em>"In both ChatGPT and our API, we will release GPT-5 as a system that integrates a lot of our technology, including o3."</em> (<Link href="https://x.com/sama/status/1889755723078443244">source</Link>)
+						</p> */}
+
+						<p>
+							2. Instead, it's a continuous merge—<strong>humans and AI are merging</strong>. The best description is simply: <strong>The Merge</strong> (<Link href="https://blog.samaltman.com/the-merge">read more</Link>). This cannot be stopped. Even if all research stopped today, the efficiency gains from what we already have would keep compounding. The total energy required to accomplish any task—especially with a human+companion team—is dropping <strong>fast</strong>.
+						</p>
 
 						{/* <p>
-							As we just saw, putting an LLM on a loop makes it infinitely intelligent; but we need more. <strong>We need results.</strong> We need actual products being created and distributed. Real services being provided, helping real people solve real problems.
+							We should stop worrying that "this process isn't fully automated because there's still a human in the loop." Instead, look at the total cost: how much energy does it take for a human to fulfill a task? How much for a human+companion? That number is dropping everywhere, and it's coming for every industry.
 						</p> */}
-					</section>
 
+						{/* <p>
+							<strong>It will be fine.</strong> It doesn't matter exactly how, or even if we're right about every detail. We just have to move fast, learn from mistakes, and not repeat them. If we're wrong, we adjust. Otherwise, we keep accelerating.
+						</p> */}
+
+						<p>
+							3. AGI is happening everywhere, every day, evolving alongside humankind. We are merging. What today seems like sophisticated AI, tomorrow will seem like child's play. The future is one where humans are free from boring work, where anyone can create a world-class film, song, game, or app. The value of everything trends toward zero, and that's a good thing.
+						</p>
+					</section>
 
 					<section>
 						<h2>The next step</h2>

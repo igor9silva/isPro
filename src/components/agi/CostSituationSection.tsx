@@ -1,4 +1,6 @@
+
 import { CollapsiblePanel } from "~/components/CollapsiblePanel";
+import { Link } from "~/components/Link";
 
 export function CostSituationSection() {
 	return (
@@ -25,7 +27,7 @@ export function CostSituationSection() {
 						Open-source models are constantly serving Pareto efficiency, relative to state-of-the-art models.
 					</li>
 					<li>
-						AI will ultimately render money out of value, so let's not overthink this 😄
+						<Link href="https://x.com/elonmusk/status/1870900539367752111" className="no-underline">AI will ultimately render money out of value, so let's not overthink this 😄</Link>
 					</li>
 				</ol>
 			</p>

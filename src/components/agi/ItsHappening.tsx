@@ -3,7 +3,7 @@ import { Link } from "~/components/Link";
 export function ItsHappening() {
 	return (
 		<section>
-			<h2>It is happening!</h2>
+			<h2 id="its-happening">It is happening!</h2>
 
 			<p>
 				If you're waiting for a single, dramatic "AGI moment", <s>you're ngmi</s> you'll miss the real story. <strong>AGI isn't a switch that flips — but rather a continuum process that's happening right now</strong> — everywhere, every second.
@@ -87,7 +87,7 @@ export function ItsHappening() {
 			</blockquote>
 
 			<img src="../media/jensen-and-the-robots.png" alt="Jensen Huang and an army of humanoid robots" className="my-1" />
-				
+
 			<p>
 				Sometimes an image is worth a million words.
 			</p>

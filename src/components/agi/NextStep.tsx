@@ -3,7 +3,7 @@ import { Link } from "~/components/Link";
 export function NextStep() {
 	return (
 		<section>
-			<h2>The next step</h2>
+			<h2 id="next-step">The next step</h2>
 
 			<p>
 				As we just saw, putting an LLM on a loop makes it infinitely intelligent; but we need more. <strong>We need results.</strong>

@@ -3,7 +3,7 @@ import { Link } from "~/components/Link";
 export function Productivity() {
 	return (
 		<section>
-			<h2>Productivity is what matters</h2>https://github.dev/igor9silva/isPro
+			<h2 id="productivity">Productivity is what matters</h2>https://github.dev/igor9silva/isPro
 
 			<p>
 				Benchmarks, like ARC-AGI-1, are a set of tests to evaluate and compare models performance.

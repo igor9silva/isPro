@@ -3,7 +3,7 @@ import { Link } from "~/components/Link";
 export function FeedbackLoop() {
 	return (
 		<section>
-			<h2>So... a loop, huh?</h2>
+			<h2 id="feedback-loop">So... a loop, huh?</h2>
 
 			<p>Let's break it down.</p>
 

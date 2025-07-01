@@ -3,7 +3,7 @@ import { Link } from "~/components/Link";
 export function NotFeelingAGI() {
 	return (
 		<section>
-			<h2>
+			<h2 id="not-feeling-agi">
 				So why I'm not <em>feeling the AGI</em>?
 			</h2>
 

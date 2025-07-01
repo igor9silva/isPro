@@ -1,11 +1,10 @@
-
 import { CollapsiblePanel } from "~/components/CollapsiblePanel";
 import { Link } from "~/components/Link";
 
 export function CostSituation() {
 	return (
 		<section>
-			<h2>The cost situation</h2>
+			<h2 id="cost-situation">The cost situation</h2>
 
 			<p>
 				I could start with an elaborate argument on how the cost per unit of intelligence is already much lower on artificial intelligences than on biological ones, but it's not worth your time, given that <strong>inference cost is very quickly trending towards zero</strong>.

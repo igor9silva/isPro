@@ -71,7 +71,12 @@ export function ItsHappening() {
 						<p>creating interfaces to AI is a whole new industry</p> */}
 
 			<p>
-				Think with me. The highest cost on most industries is <strong>human labor</strong>, meaning that every second saved by using an AI system, from a simple copy/paste from/into ChatGPT up to a fully automated swarm of agents, saves energy and <strong>will eventually translate into cheaper products</strong>.
+				Think with me. The highest cost on most industries is <strong>human labor</strong>, meaning that every second saved by using an AI system, from a simple copy/paste from/into ChatGPT up to a fully automated swarm of agents, saves energy and <strong>will eventually translate into cheaper/better products</strong>.
+			</p>
+
+			<p>
+				TODO: 1. Think tasks, not jobs.
+				Elaborate better the examples. How a simple ChatGPT usage improves efficiency?
 			</p>
 
 			<br />
@@ -81,15 +86,20 @@ export function ItsHappening() {
 				<p>— my barber</p>
 			</blockquote>
 
+			<img src="../media/jensen-and-the-robots.png" alt="Jensen Huang and an army of humanoid robots" className="my-1" />
+				
 			<p>
 				Sometimes an image is worth a million words.
-				<img src="../media/jensen-and-the-robots.png" alt="Jensen Huang and an army of humanoid robots" className="my-1" />
-				<span className="text-muted-foreground text-sm">This is Jensen Huang, CEO of Nvidia, showing <strong>just a few of</strong> the humanoid robots being developed. They're coming — trillions of them.</span>
 			</p>
 
 			<p>
-				1. Think tasks, not jobs.
+				This is Jensen Huang, CEO of Nvidia, showing <strong>just a few of</strong> the humanoid robots being developed.
 			</p>
+
+			<p>
+				They're coming. Trillions of them.
+			</p>
+
 			{/* 
 						<p>
 							This is a whole new industry: <strong>creating interfaces for AI companions</strong>. Apps like Cursor, ChatGPT, Claude, and MCP are not just products—they're the closest things we have to digital collaborators, and they're getting better every day. Google is now just a tool for companions. Tavily, EXA, Perplexity, and many more are building the connective tissue for this new world.
@@ -101,6 +111,17 @@ export function ItsHappening() {
 
 			<p>
 				2. Instead, it's a continuous merge—<strong>humans and AI are merging</strong>. The best description is simply: <strong>The Merge</strong> (<Link href="https://blog.samaltman.com/the-merge">read more</Link>). This cannot be stopped. Even if all research stopped today, the efficiency gains from what we already have would keep compounding. The total energy required to accomplish any task—especially with a human+companion team—is dropping <strong>fast</strong>.
+			</p>
+
+			<p>
+				TODO:
+				Humans are powerful because we work as a single network. We orchestrate our behavior through communication. A language capable of representing complex ideas is what enables that.
+
+				200000 years, same genes
+
+				AIs are becoming part of that same network. It's like we were able to fabricate more humans.
+
+
 			</p>
 
 			{/* <p>

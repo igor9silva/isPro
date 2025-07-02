@@ -20,7 +20,7 @@ interface CollapsiblePanelProps {
 
 function ReferenceList({ references }: { references: ReferenceLink[] }) {
 	return (
-		<ul className="space-y-4">
+		<ul className="space-y-4 font-medium">
 			{references.map((ref) => (
 				<li
 					key={ref.url}
@@ -29,7 +29,6 @@ function ReferenceList({ references }: { references: ReferenceLink[] }) {
 					{typeof ref.title === "string" ? (
 						<Link
 							href={ref.url}
-							className="font-medium text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 underline underline-offset-4 decoration-gray-500 dark:decoration-gray-400 hover:decoration-gray-700 dark:hover:decoration-gray-300 transition-colors"
 						>
 							{ref.title}
 						</Link>

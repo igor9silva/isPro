@@ -1,3 +1,7 @@
+/* Geist and Geist Mono fonts */
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -47,6 +51,9 @@ html {
     @apply my-6 max-w-full h-auto;
   }
   :root {
+    --font-sans: "Geist";
+    --font-mono: "Geist Mono";
+
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;

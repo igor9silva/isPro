@@ -24,7 +24,7 @@ export const Route = createRootRoute({
       ...seo({
         title: 'A path to infinite productivity | isPro',
         description: `We believe our research will lead to infinite productivity for all humankind. Building public, open and free AI systems.`,
-        // TODO: image
+        image: '/og.png',
       }),
     ],
     links: [

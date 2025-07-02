@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss";
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 export default {
   darkMode: "media",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -10,6 +12,10 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+				sans: ['var(--font-sans)', ...defaultTheme.fontFamily.sans],
+				mono: ['var(--font-mono)', ...defaultTheme.fontFamily.mono],
+			},
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -54,4 +60,4 @@ export default {
       },
     },
   },
-};
+} satisfies Config;

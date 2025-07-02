@@ -26,7 +26,7 @@ export function CostSituation() {
 						Open-source models are constantly serving Pareto efficiency, relative to state-of-the-art models.
 					</li>
 					<li>
-						<Link href="https://x.com/elonmusk/status/1870900539367752111" className="no-underline">AI will ultimately render money out of value, so let's not overthink this 😄</Link>
+						<Link href="https://twitter.com/elonmusk/status/1870900539367752111" className="no-underline">AI will ultimately render money out of value, so let's not overthink this 😄</Link>
 					</li>
 				</ol>
 			</p>
@@ -36,7 +36,7 @@ export function CostSituation() {
 			</p>
 
 			<p>
-				"Too cheap to meter", they say.
+				"Too cheap to meter", as they say.
 			</p>
 
 			<CollapsiblePanel
@@ -54,7 +54,7 @@ export function CostSituation() {
 						description: "from a16z.",
 					},
 					{
-						url: "https://x.com/ivanfioravanti/status/1917297053576663121",
+						url: "https://twitter.com/ivanfioravanti/status/1917297053576663121",
 						title: "Qwen3 30B benchmark on Macs",
 						description: "by @ivanfioravanti",
 					},

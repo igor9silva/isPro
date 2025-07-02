@@ -5,12 +5,19 @@ export function Intro() {
 		<section>
 			<p>
 				First of all, yes. I'm calling it.
+				<p>But...</p>
 			</p>
 
-			<p>But...</p>
+			<br />
+
+			<p className="italic">
+				<span>[This is a discussion on AI, the future of humankind, post-labor economics and our own research.]</span>
+			</p>
+
+			<br />
 
 			<p>
-				Let's first address what AGI — Artificial General Intelligence — is.
+				Let's start by addressing what AGI — Artificial General Intelligence — means.
 			</p>
 
 			<p>
@@ -40,12 +47,16 @@ export function Intro() {
 
 			<p>
 				But here is the thing: by that definition, it's been achieved long
-				ago. Likely with the introduction of GPT-4.
+				ago. Likely with the <Link href="https://openai.com/index/gpt-4/">introduction of GPT-4</Link>,
+				given that <span className="font-bold">no single human could beat it on a wide test</span> (as
+				in a mixed range of disciplines, industries, areas, whatever).
+
 			</p>
 
+
+
 			<p>
-				No single human could beat no single large model on a wide test (as
-				in a mixed range of disciplines, industries, areas, whatever).
+				Consider this thought experiment: design a test covering 20 diverse domains - quantum physics, medieval history, contract law, protein folding, Mandarin translation, statistical analysis, creative writing, etc. Now find a single human who could outperform GPT-4 on that.
 			</p>
 
 			<p>In fact, let's exercise this now.</p>
@@ -58,39 +69,31 @@ export function Intro() {
 
 			<ol>
 				<li>
-					Write Rust code (with unit tests) that applies SIMD-vectorized
-					ReLU to a f32 slice using std::arch.
-					<br />
 					<Link href="https://chatgpt.com/share/68593c5a-7eb4-8013-9967-96e84530d198">
-						https://chatgpt.com/share/68593c5a-7eb4-8013-9967-96e84530d198
+						Write Rust code (with unit tests) that applies SIMD-vectorized
+						ReLU to a f32 slice using std::arch.
 					</Link>
 				</li>
 
 				<li>
-					Create a decision flowchart for diagnosing iron-deficiency anemia
-					in primary care using ferritin, transferrin saturation, CRP, and
-					colonoscopy referral thresholds.
-					<br />
 					<Link href="https://chatgpt.com/share/68593c75-a428-8013-9e92-287bd48e7780">
-						https://chatgpt.com/share/68593c75-a428-8013-9e92-287bd48e7780
+						Create a decision flowchart for diagnosing iron-deficiency anemia
+						in primary care using ferritin, transferrin saturation, CRP, and
+						colonoscopy referral thresholds.
 					</Link>
 				</li>
 
 				<li>
-					Prove every finite group of order p² is abelian.
-					<br />
 					<Link href="https://chatgpt.com/share/68592f50-5edc-8013-bceb-30d5e85a1bc8">
-						https://chatgpt.com/share/68592f50-5edc-8013-bceb-30d5e85a1bc8
+						Prove every finite group of order p² is abelian.
 					</Link>
 				</li>
 
 				<li>
-					Draft a GDPR-compliant privacy notice for a wearable glucose
-					monitor that transfers data to U.S. servers, citing legal bases
-					and retention limits.
-					<br />
 					<Link href="https://chatgpt.com/share/68593909-03f4-8013-a411-27cf0a3664aa">
-						https://chatgpt.com/share/68593909-03f4-8013-a411-27cf0a3664aa
+						Draft a GDPR-compliant privacy notice for a wearable glucose
+						monitor that transfers data to U.S. servers, citing legal bases
+						and retention limits.
 					</Link>
 				</li>
 			</ol>
@@ -119,7 +122,29 @@ export function Intro() {
 				you do when asked what's 2+2.
 			</p>
 
-			<p>Intelligence-wise, no single human beats a single GPT-4.</p>
+			<p>
+				While a domain expert might beat it on their specialty, no human possesses expert-level knowledge across the breadth that current LLMs demonstrate. This isn't about peak performance in narrow domains - it's about consistent competence across unlimited domains.
+			</p>
+
+			<p>
+				Being 80% competent on everything is <strong>way more valuable</strong> than being 100% competent on one thing. By far.
+			</p>
+
+			{/* <p>
+				The 'hallucination problem' is frequently cited as a fundamental limitation of current AI systems. However, this framing reveals a misunderstanding of both the nature of intelligence and creativity itself.
+				As Google DeepMind's Demis Hassabis noted, 'hallucination isn't always a bug - it can be a tool for creativity.' This insight cuts to the heart of the matter: the same mechanism that produces 'incorrect' outputs in factual contexts produces novel, creative outputs in generative contexts.
+				What people call 'hallucinations' are often:
+				Requests for information the model genuinely doesn't know (solution: tool access)
+				Creative extrapolation beyond training data (this is actually desirable for many tasks)
+				Ambiguous queries where multiple valid interpretations exist (solution: clarification)
+				Outdated training data (solution: real-time information retrieval)
+				The key insight: creativity and hallucination are the same underlying process. When you want an AI to write poetry, generate novel ideas, or think outside the box, you're explicitly asking it to 'hallucinate' in a controlled way. The challenge isn't eliminating this capability - it's directing it appropriately.
+				When LLMs have access to verification tools, search capabilities, and clear feedback loops, unwanted 'hallucination' rates drop to negligible levels while preserving creative capability. The issue isn't the model - it's the system design and task specification.
+
+				ref: https://www.youtube.com/watch?v=KUzuQpMdQZo (41:49 ~ 42:38)
+			</p> */}
+
+			<p>Intelligence-wise, no single human beats GPT-4.</p>
 
 			<p>
 				<strong>AGI has been achieved.</strong>

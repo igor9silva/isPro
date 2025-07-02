@@ -1,3 +1,4 @@
+import { CollapsiblePanel } from "~/components/CollapsiblePanel";
 import { Link } from "~/components/Link";
 
 export function FeedbackLoop() {
@@ -83,12 +84,12 @@ export function FeedbackLoop() {
 			<p>In other words, <strong>unlimited intelligence</strong>.</p>
 
 			<p>
-				It's that simple, but keep in mind that "unlimited intelligence" is just as limited as your wallet.
+				It's that simple, but keep in mind that "unlimited intelligence" is just as limited as your wallet, as it gets exponentially more expensive.
 			</p>
 
 			<p>
 				I should also mention that there is a secondary hidden cost: <strong>time</strong> — the ultimate nature currency!
-				So I'll refer to the combined cost of time and money as <strong>energy</strong> from now on.
+				So from now on, I'll refer to the combined cost of time and money as <strong>energy</strong>.
 			</p>
 
 			<br />
@@ -106,6 +107,37 @@ export function FeedbackLoop() {
 			<p>
 				We're getting there. Stay with me.
 			</p>
+
+			<CollapsiblePanel
+				title="Related papers"
+				icon="📚"
+				references={[
+					{
+						url: "https://arxiv.org/abs/2305.10601",
+						title: `Tree of Thoughts: Deliberate Problem Solving with Large Language Models`,
+					},
+					{
+						url: "https://arxiv.org/abs/2303.17651",
+						title: `Self-Refine: Iterative Refinement with Self-Feedback`,
+					},
+					{
+						url: "https://arxiv.org/abs/2303.11366",
+						title: `Reflexion: Language Agents with Verbal Reinforcement Learning`,
+					},
+					{
+						url: "https://arxiv.org/abs/2502.18600",
+						title: `Chain of Draft: Thinking Faster by Writing Less`,
+					},
+					{
+						url: "https://arxiv.org/abs/2412.18547",
+						title: `Token-Budget-Aware LLM Reasoning`,
+					},
+					{
+						url: "https://arxiv.org/abs/2505.11274",
+						title: `SelfBudgeter: Adaptive Token Allocation for Efficient LLM Reasoning`,
+					},
+				]}
+			/>
 
 		</section>
 	);

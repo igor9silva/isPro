@@ -6,29 +6,24 @@ export function ItsHappening() {
 			<h2 id="its-happening">It is happening!</h2>
 
 			<p>
+				Whether I was able to convince you that current models are AGI or not, it doesn't really matter because <strong>it is happening!</strong>
+			</p>
+
+			<p>
 				If you're waiting for a single, dramatic "AGI moment", <s>you're ngmi</s> you'll miss the real story. <strong>AGI isn't a switch that flips — but rather a continuum process that's happening right now</strong> — everywhere, every second.
 			</p>
 
 			<p>
-				It's not: <img src="../media/agi-bool.png" alt="boolean AGI" className="mt-1" />
+				It doesn't look like this: <img src="../media/agi-bool.png" alt="boolean AGI" className="mt-1" />
 			</p>
 
 			<p>
-				But: <img src="../media/agi-continuum.png" alt="continuum AGI" className="mt-1" />
-			</p>
-
-			<p>
-				Whether I was able to convince you that current models are AGI or not, it doesn't really matter.
+				But like this: <img src="../media/agi-continuum.png" alt="continuum AGI" className="mt-1" />
 			</p>
 
 			<p>
 				<strong>Every layer of every industry is getting unimaginable and unprecedented efficiency gains</strong>, and that's awesome!
 			</p>
-
-
-			{/* <p>
-							Billions of human–AI and AI–AI interactions are happening every day, quietly adding efficiency to every layer of every industry.
-						</p> */}
 
 			<p>
 				The best way to observe this effect right now is in the software industry. The energy required to develop and maintain almost any kind of software has dropped by <strong>~80% in the last two years</strong>. I'll say it again: building software is <strong>80% CHEAPER TODAY THAN IT WAS TWO YEARS AGO</strong>. That's not an exaggeration, specially for consumer software.
@@ -39,7 +34,7 @@ export function ItsHappening() {
 			</p>
 
 			<p>
-				Just one thing matters: building software is getting much cheaper, and <strong>that's good for everybody</strong>, as that translates into more iterations, more features, more products, more services, <strong>more value</strong>. For everyone.
+				Just one thing matters: building software is getting much cheaper, and <strong>that's good for everybody</strong>, as that translates into more iterations, more features, more products, more libraries, more services, <strong>more value</strong>. For everyone.
 			</p>
 
 			<p>
@@ -71,12 +66,19 @@ export function ItsHappening() {
 						<p>creating interfaces to AI is a whole new industry</p> */}
 
 			<p>
-				Think with me. The highest cost on most industries is <strong>human labor</strong>, meaning that every second saved by using an AI system, from a simple copy/paste from/into ChatGPT up to a fully automated swarm of agents, saves energy and <strong>will eventually translate into cheaper/better products</strong>.
+				Think with me. The highest cost on most industries is <strong>human labor</strong>, meaning that every human-second saved by using an AI system, from a simple copy/paste from/into ChatGPT up to a fully automated swarm of agents, saves energy and <strong>will eventually translate into cheaper and better products</strong>.
 			</p>
 
 			<p>
-				TODO: 1. Think tasks, not jobs.
-				Elaborate better the examples. How a simple ChatGPT usage improves efficiency?
+				As a software engineer, I can produce 5x more value per energy today than I could 2 years ago. Mostly due to my direct usage of AI, but also due to everyone else's usage of AI. Every open-source library we rely on is evolving faster than ever. Every tool I use is getting better every week. And so on.
+			</p>
+
+			<p>
+				To better visualize this process, I highly suggest thinking more of <code>tasks</code> and less of <code>roles</code>.
+			</p>
+
+			<p>
+				There won't be a day where AI is suddenly capable of replacing your role entirely, but the tasks you do to fulfill your job are quickly getting cheaper and better. Picture how "everyone" has AI assistancy to write e-mails and documents, or how "everyone" have near-perfect translation for ~every language on earth. That affects everyone everywhere, and <Link href="https://blog.samaltman.com/productivity#:~:text=Compoundgrowth%20gets,difference%20is%20massive.%C2%A0" className="font-bold">compounds</Link>.
 			</p>
 
 			<br />
@@ -86,55 +88,23 @@ export function ItsHappening() {
 				<p>— my barber</p>
 			</blockquote>
 
-			<img src="../media/jensen-and-the-robots.png" alt="Jensen Huang and an army of humanoid robots" className="my-1" />
+			<p className="text-sm text-muted-foreground">
+				<img src="../media/jensen-and-the-robots.png" alt="Jensen Huang and an army of humanoid robots" className="my-1" />
+				This is Jensen Huang, CEO of Nvidia, showing <strong>just a few of</strong> the humanoid robots being developed.
+			</p>
 
 			<p>
 				Sometimes an image is worth a million words.
 			</p>
 
-			<p>
-				This is Jensen Huang, CEO of Nvidia, showing <strong>just a few of</strong> the humanoid robots being developed.
-			</p>
-
-			<p>
+			{/* <p>
 				They're coming. Trillions of them.
-			</p>
-
-			{/* 
-						<p>
-							This is a whole new industry: <strong>creating interfaces for AI companions</strong>. Apps like Cursor, ChatGPT, Claude, and MCP are not just products—they're the closest things we have to digital collaborators, and they're getting better every day. Google is now just a tool for companions. Tavily, EXA, Perplexity, and many more are building the connective tissue for this new world.
-						</p> */}
-			{/* 
-						<p>
-							Sam Altman recently said we should stop thinking in terms of models and start thinking in terms of <strong>systems</strong>—integrated, evolving, tool-using, feedback-driven entities. In his words: <em>"In both ChatGPT and our API, we will release GPT-5 as a system that integrates a lot of our technology, including o3."</em> (<Link href="https://x.com/sama/status/1889755723078443244">source</Link>)
-						</p> */}
+			</p> */}
 
 			<p>
-				2. Instead, it's a continuous merge—<strong>humans and AI are merging</strong>. The best description is simply: <strong>The Merge</strong> (<Link href="https://blog.samaltman.com/the-merge">read more</Link>). This cannot be stopped. Even if all research stopped today, the efficiency gains from what we already have would keep compounding. The total energy required to accomplish any task—especially with a human+companion team—is dropping <strong>fast</strong>.
+				As I said, <strong>every</strong> industry.
 			</p>
 
-			<p>
-				TODO:
-				Humans are powerful because we work as a single network. We orchestrate our behavior through communication. A language capable of representing complex ideas is what enables that.
-
-				200000 years, same genes
-
-				AIs are becoming part of that same network. It's like we were able to fabricate more humans.
-
-
-			</p>
-
-			{/* <p>
-							We should stop worrying that "this process isn't fully automated because there's still a human in the loop." Instead, look at the total cost: how much energy does it take for a human to fulfill a task? How much for a human+companion? That number is dropping everywhere, and it's coming for every industry.
-						</p> */}
-
-			{/* <p>
-							<strong>It will be fine.</strong> It doesn't matter exactly how, or even if we're right about every detail. We just have to move fast, learn from mistakes, and not repeat them. If we're wrong, we adjust. Otherwise, we keep accelerating.
-						</p> */}
-
-			<p>
-				3. AGI is happening everywhere, every day, evolving alongside humankind. We are merging. What today seems like sophisticated AI, tomorrow will seem like child's play. The future is one where humans are free from boring work, where anyone can create a world-class film, song, game, or app. The value of everything trends toward zero, and that's a good thing.
-			</p>
 		</section>
 	);
 }

@@ -3,10 +3,10 @@ import { Link } from "~/components/Link";
 export function Productivity() {
 	return (
 		<section>
-			<h2 id="productivity">Productivity is what matters</h2>https://github.dev/igor9silva/isPro
+			<h2 id="productivity">Productivity is what matters</h2>
 
 			<p>
-				Benchmarks, like ARC-AGI-1, are a set of tests to evaluate and compare models performance.
+				<Link href="https://artificialanalysis.ai">Benchmarks</Link>, like ARC-AGI-1, are a set of tests to evaluate and compare models performance.
 			</p>
 
 			<p>
@@ -67,7 +67,7 @@ export function Productivity() {
 			</p>
 
 			<p>
-				Today, any modern LLM, from any provider, has intelligence enough to use any tool — or to learn how to use any tool through a feedback loop. <strong>Analogous to how one learns to drive by just driving.</strong>
+				Today, any modern LLM, from any provider, has intelligence enough to use any tool — or to learn how to use any tool through a feedback loop. <strong>Analogous to learning how to drive by just driving.</strong>
 			</p>
 
 			<p>
@@ -75,7 +75,7 @@ export function Productivity() {
 			</p>
 
 			<p>
-				All of them have demonstrated to be able finish the game using nothing but their intelligence, a feedback loop and tools such as moving and taking notes — very similar to how a human would do it.
+				All of them have demonstrated being able to finish the game using nothing but their intelligence, a feedback loop and tools such as moving and taking notes — very similar to how a human would do it.
 
 			</p>
 

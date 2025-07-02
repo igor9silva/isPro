@@ -26,7 +26,7 @@ html {
     @apply my-4 pl-4 border-l-2 border-gray-300 dark:border-gray-600 italic;
   }
   a {
-    @apply underline;
+    @apply underline decoration-neutral-600 dark:decoration-neutral-400 hover:decoration-neutral-800 dark:hover:decoration-neutral-200 transition-all duration-150 decoration-[0.08em] underline-offset-2;
   }
   button {
     @apply px-4 py-2 cursor-pointer;

@@ -8,6 +8,7 @@ import { ItsHappening } from "~/components/agi/ItsHappening";
 import { NextStep } from "~/components/agi/NextStep";
 import { NotFeelingAGI } from "~/components/agi/NotFeelingAGI";
 import { Productivity } from "~/components/agi/Productivity";
+import { WhatNow } from "~/components/agi/WhatNow";
 import { CollapsiblePanel } from "~/components/CollapsiblePanel";
 import { Button } from "~/components/ui/button";
 
@@ -57,6 +58,7 @@ function Main() {
 				<Productivity />
 				<CostSituation />
 				<ItsHappening />
+				<WhatNow />
 				<NextStep />
 
 				<h1>WORK IN PROGRESS</h1>

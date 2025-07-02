@@ -1,16 +1,16 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Expand, Shrink } from "lucide-react";
-import { useEffect, useState } from "react";
-import { CostSituation } from "~/components/agi/CostSituation";
-import { FeedbackLoop } from "~/components/agi/FeedbackLoop";
-import { Intro } from "~/components/agi/Intro";
-import { ItsHappening } from "~/components/agi/ItsHappening";
-import { NotFeelingAGI } from "~/components/agi/NotFeelingAGI";
-import { Productivity } from "~/components/agi/Productivity";
-import { WhatNow } from "~/components/agi/WhatNow";
-import { Button } from "~/components/ui/button";
+import { createFileRoute } from '@tanstack/react-router';
+import { Expand, Shrink } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { CostSituation } from '~/components/agi/CostSituation';
+import { FeedbackLoop } from '~/components/agi/FeedbackLoop';
+import { Intro } from '~/components/agi/Intro';
+import { ItsHappening } from '~/components/agi/ItsHappening';
+import { NotFeelingAGI } from '~/components/agi/NotFeelingAGI';
+import { Productivity } from '~/components/agi/Productivity';
+import { WhatNow } from '~/components/agi/WhatNow';
+import { Button } from '~/components/ui/button';
 
-export const Route = createFileRoute("/agi")({
+export const Route = createFileRoute('/agi')({
 	component: Main,
 });
 
@@ -18,17 +18,17 @@ function Main() {
 	//
 	const [isFullWidth, setIsFullWidth] = useState(() => {
 		// Only access localStorage on the client side
-		if (typeof window !== "undefined") {
-			const saved = localStorage.getItem("isFullWidth");
+		if (typeof window !== 'undefined') {
+			const saved = localStorage.getItem('isFullWidth');
 			return saved ? JSON.parse(saved) : false;
 		}
 		return false; // Default value for SSR
-	})
+	});
 
 	// Persist to localStorage whenever the state changes
 	useEffect(() => {
-		if (typeof window !== "undefined") {
-			localStorage.setItem("isFullWidth", JSON.stringify(isFullWidth));
+		if (typeof window !== 'undefined') {
+			localStorage.setItem('isFullWidth', JSON.stringify(isFullWidth));
 		}
 	}, [isFullWidth]);
 
@@ -44,7 +44,7 @@ function Main() {
 
 			<article
 				className="mx-auto p-4 transition-[max-width] duration-150 ease-out"
-				style={{ maxWidth: isFullWidth ? "100vw" : "64rem" }}
+				style={{ maxWidth: isFullWidth ? '100vw' : '64rem' }}
 			>
 				<header>
 					<h1>AGI achieved; now what?</h1>
@@ -92,7 +92,7 @@ function Main() {
 						},
 					]}
 				/> */}
-			</article >
+			</article>
 		</>
-	)
+	);
 }

@@ -1,7 +1,7 @@
-import { ChevronDown } from "lucide-react";
-import { type ReactNode, useState } from "react";
-import { Link } from "~/components/Link";
-import { cn } from "~/lib/utils";
+import { ChevronDown } from 'lucide-react';
+import { type ReactNode, useState } from 'react';
+import { Link } from '~/components/Link';
+import { cn } from '~/lib/utils';
 
 interface ReferenceLink {
 	url: string;
@@ -23,15 +23,11 @@ function ReferenceList({ references }: { references: ReferenceLink[] }) {
 		<ul className="space-y-4 font-medium">
 			{references.map((ref) => (
 				<li
-					key={ref.url}
+					key={ref.url} //
 					className="border-l-2 border-gray-300 dark:border-gray-600 pl-4"
 				>
-					{typeof ref.title === "string" ? (
-						<Link
-							href={ref.url}
-						>
-							{ref.title}
-						</Link>
+					{typeof ref.title === 'string' ? ( //
+						<Link href={ref.url}>{ref.title}</Link>
 					) : (
 						ref.title
 					)}
@@ -55,7 +51,7 @@ export function CollapsiblePanel({
 	const [isOpen, setIsOpen] = useState(defaultOpen);
 
 	return (
-		<div className={cn("my-4", className)}>
+		<div className={cn('my-4', className)}>
 			<div className="border border-border rounded-lg overflow-hidden bg-gray-50 dark:bg-neutral-900">
 				<button
 					type="button"
@@ -70,8 +66,8 @@ export function CollapsiblePanel({
 					</div>
 					<ChevronDown
 						className={cn(
-							"h-5 w-5 text-gray-600 dark:text-gray-400 transition-transform duration-200",
-							isOpen && "rotate-180",
+							'h-5 w-5 text-gray-600 dark:text-gray-400 transition-transform duration-200',
+							isOpen && 'rotate-180',
 						)}
 					/>
 				</button>

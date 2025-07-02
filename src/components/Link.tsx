@@ -11,8 +11,8 @@ export function Link({
 }) {
 	return (
 		<a
-			href={href}
-			target={inNewTab ? "_blank" : undefined}
+			href={href} //
+			target={inNewTab ? '_blank' : undefined}
 			rel="noopener noreferrer"
 			className={className}
 		>

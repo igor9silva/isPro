@@ -12,7 +12,7 @@ export function Intro() {
 			<br />
 
 			<p className="italic">
-				<span>[This is a discussion on AI, the future of humankind, post-labor economics and our own research.]</span>
+				<span>[This is a discussion on AI, the future of humankind, post-labor economics and our research on achieving infinite productivity.]</span>
 			</p>
 
 			<br />

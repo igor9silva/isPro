@@ -5,11 +5,9 @@ import { CostSituation } from "~/components/agi/CostSituation";
 import { FeedbackLoop } from "~/components/agi/FeedbackLoop";
 import { Intro } from "~/components/agi/Intro";
 import { ItsHappening } from "~/components/agi/ItsHappening";
-import { NextStep } from "~/components/agi/NextStep";
 import { NotFeelingAGI } from "~/components/agi/NotFeelingAGI";
 import { Productivity } from "~/components/agi/Productivity";
 import { WhatNow } from "~/components/agi/WhatNow";
-import { CollapsiblePanel } from "~/components/CollapsiblePanel";
 import { Button } from "~/components/ui/button";
 
 export const Route = createFileRoute("/agi")({
@@ -59,11 +57,11 @@ function Main() {
 				<CostSituation />
 				<ItsHappening />
 				<WhatNow />
-				<NextStep />
+				{/* <NextStep /> */}
 
 				<h1>WORK IN PROGRESS</h1>
 
-				<CollapsiblePanel
+				{/* <CollapsiblePanel
 					title="References & Further Reading"
 					icon="📚"
 					references={[
@@ -93,7 +91,7 @@ function Main() {
 							description: "A comprehensive model benchmark compilation",
 						},
 					]}
-				/>
+				/> */}
 			</article >
 		</>
 	)

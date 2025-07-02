@@ -1,4 +1,5 @@
 import { Link } from "~/components/Link";
+import { Parenthetical } from "~/components/ui/parenthetical";
 
 export function ItsHappening() {
 	return (
@@ -38,13 +39,13 @@ export function ItsHappening() {
 			</p>
 
 			<p>
-				Coding is among the first industries to collect those gains, but not because it's easy (as in would require less intelligence), but due to:
+				Coding is among the first industries to collect those gains, but not because it's <Parenthetical content="As in would require less intelligence.">easy</Parenthetical>, but due to:
 				<ol>
 					<li>
 						Being mostly digital, making it easy to interface existing tools to AI.
 					</li>
 					<li>
-						Having a high aggregated value (developers used to make big bucks), making it worth even with today's inference prices.
+						Having a <Parenthetical content="Developers used to make big bucks.">high aggregated value</Parenthetical>, making it worth even with <Link href="https://www.llm-prices.com/#sb=input&sd=descending">today's inference prices</Link>.
 					</li>
 					<li>
 						Most industries run on software, making it universal. You can solve an untrackable and ever-growing amount of challenges with code.
@@ -53,7 +54,7 @@ export function ItsHappening() {
 			</p>
 
 			<p>
-				A few examples of products driving such efficiency gains are <Link href="https://cursor.com">Cursor</Link>, <Link href="https://anthropic.com/claude-code">Claude Code</Link>, <Link href="https://openai.com/codex/">Codex</Link> and many others. All of them work in a similar fashion to what we have described so far (loop, tools, knowledge, feedback).
+				A few examples of products driving such efficiency gains are <Link href="https://cursor.com">Cursor</Link>, <Link href="https://anthropic.com/claude-code">Claude Code</Link>, <Link href="https://openai.com/codex/">Codex</Link> and many others. All of them work in a <Parenthetical content="Loop, tools, knowledge, feedback.">similar fashion to what we have described so far</Parenthetical>.
 			</p>
 
 			<p>

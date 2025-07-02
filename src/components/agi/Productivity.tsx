@@ -1,4 +1,5 @@
 import { Link } from "~/components/Link";
+import { Parenthetical } from "~/components/ui/parenthetical";
 
 export function Productivity() {
 	return (
@@ -51,7 +52,7 @@ export function Productivity() {
 			</p>
 
 			<p>
-				When using a tool, you're essentially interfacing with someone else's (including your past self) knowledge, which was produced with their intelligence + their energy on lots of iterations, and served to you with most of the complexity abstracted away.
+				When using a tool, you're essentially interfacing with  <Parenthetical content={`Including your "past self".`}>someone else's</Parenthetical> knowledge, which was produced with their intelligence + their energy on lots of iterations, and served to you with most of the complexity abstracted away.
 			</p>
 
 			<p>
@@ -71,7 +72,7 @@ export function Productivity() {
 			</p>
 
 			<p>
-				A very interesting example is playing games. The 3 most popular models are playing Pokémon right now (live on Twitch), with <strong>no prior instructions</strong> on how the game works, it's mechanics nor it's goals.
+				A very interesting example is playing games. The 3 most popular models <Parenthetical content="Live on Twitch! Links below.">are playing Pokémon right now</Parenthetical>, with <strong>no prior instructions</strong> on how the game works, it's mechanics nor it's goals.
 			</p>
 
 			<p>

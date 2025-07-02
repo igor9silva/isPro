@@ -1,4 +1,5 @@
 import { Link } from "~/components/Link";
+import { Parenthetical } from "~/components/ui/parenthetical";
 
 export function NotFeelingAGI() {
 	return (
@@ -12,9 +13,7 @@ export function NotFeelingAGI() {
 			<p>Or, more importantly, why do I still have to work?!</p>
 
 			<p>
-				Well, let's picture what it takes to actually{" "}
-				<strong>produce value</strong>. i.e. supply a product or provide a
-				service that helps someone.
+				Well, let's picture what it takes to actually <Parenthetical content="i.e. supply a product or provide a service that helps someone."><strong>produce value</strong></Parenthetical>.
 			</p>
 
 			<p>

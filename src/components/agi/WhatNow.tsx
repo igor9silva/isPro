@@ -1,5 +1,6 @@
 import { CollapsiblePanel } from "~/components/CollapsiblePanel";
 import { Link } from "~/components/Link";
+import { Parenthetical } from "~/components/ui/parenthetical";
 
 export function WhatNow() {
 	return (
@@ -11,7 +12,7 @@ export function WhatNow() {
 			</p>
 
 			<p>
-				For thousands of years (maybe millions), survival, status, and meaning flowed from productive contribution. Every major social form encoded this. Even our earliest hunter-gatherer ancestors <Link href="https://openstax.org/books/introduction-anthropology/pages/7-3-gathering-and-hunting">organized their entire social structures around work divisions</Link>.
+				For <Parenthetical content="Maybe millions of years!">thousands of years</Parenthetical>, survival, status, and meaning flowed from productive contribution. Every major social form encoded this. Even our earliest hunter-gatherer ancestors <Link href="https://openstax.org/books/introduction-anthropology/pages/7-3-gathering-and-hunting">organized their entire social structures around work divisions</Link>.
 			</p>
 
 			<p>

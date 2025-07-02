@@ -1,5 +1,6 @@
 import { CollapsiblePanel } from "~/components/CollapsiblePanel";
 import { Link } from "~/components/Link";
+import { Parenthetical } from "~/components/ui/parenthetical";
 
 export function FeedbackLoop() {
 	return (
@@ -24,8 +25,7 @@ export function FeedbackLoop() {
 
 			<p>
 				If you are following AI progress, it might have rang a bell on you
-				already, because that's what reasoning (a.k.a. Chain of Thoughts
-				a.k.a. test-time compute) is all about. <strong>Iterating.</strong>
+				already, because that's what <Parenthetical content="(a.k.a. Chain of Thoughts, a.k.a. test-time compute).">reasoning</Parenthetical> is all about. <strong>Iterating.</strong>
 			</p>
 
 			<p>
@@ -75,8 +75,7 @@ export function FeedbackLoop() {
 			<p>
 				Those are o3 (lastest OpenAI model) results on a very popular benchmark for AGI —{" "}
 				<Link href="https://arcprize.org/leaderboard">ARC-AGI-1</Link>. Note
-				that adding more budget (shown as <code>low</code>,{" "}
-				<code>medium</code>, <code>high</code>) results in a better score,
+				that adding <Parenthetical content={`Shown as "low", "medium" and "high".`}>more budget</Parenthetical> results in a better score,
 				but each step improves it less — <strong>increasingly expensive, never
 					capped</strong>.
 			</p>
@@ -139,6 +138,6 @@ export function FeedbackLoop() {
 				]}
 			/>
 
-		</section>
+		</section >
 	);
 }

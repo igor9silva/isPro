@@ -1,4 +1,5 @@
 import { Link } from "~/components/Link";
+import { Parenthetical } from "~/components/ui/parenthetical";
 
 export function Intro() {
 	return (
@@ -48,8 +49,8 @@ export function Intro() {
 			<p>
 				But here is the thing: by that definition, it's been achieved long
 				ago. Likely with the <Link href="https://openai.com/index/gpt-4/">introduction of GPT-4</Link>,
-				given that <span className="font-bold">no single human could beat it on a wide test</span> (as
-				in a mixed range of disciplines, industries, areas, whatever).
+				given that <span className="font-bold">no single human could beat it on a <Parenthetical content="As
+				in a mixed range of disciplines, industries, areas, whatever.">wide test</Parenthetical></span>.
 
 			</p>
 

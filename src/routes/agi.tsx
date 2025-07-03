@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
+import { track } from '@vercel/analytics';
 import { Expand, Shrink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { CostSituation } from '~/components/agi/CostSituation';
@@ -16,6 +17,8 @@ export const Route = createFileRoute('/agi')({
 
 function Main() {
 	//
+	track('agi');
+
 	const [isFullWidth, setIsFullWidth] = useState(() => {
 		// Only access localStorage on the client side
 		if (typeof window !== 'undefined') {

@@ -1,6 +1,7 @@
 import { openai } from '@ai-sdk/openai';
 import { createFileRoute } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
+import { track } from '@vercel/analytics';
 import { generateText } from 'ai';
 import { useState } from 'react';
 import { JSXPreview } from '~/components/ui/jsx-preview';
@@ -51,6 +52,9 @@ export const Route = createFileRoute('/gen-ui')({
 });
 
 function RouteComponent() {
+	//
+	track('gen-ui');
+
 	const [jsxCode, setJsxCode] = useState(`<div className="p-4 bg-blue-100 rounded-lg">
   <h2 className="text-xl font-bold mb-2">Hello JSX Preview!</h2>
   <p className="text-gray-700">

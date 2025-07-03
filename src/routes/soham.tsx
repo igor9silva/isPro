@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
+import { track } from '@vercel/analytics';
 
 export const Route = createFileRoute('/soham')({
 	component: RouteComponent,
@@ -6,6 +7,8 @@ export const Route = createFileRoute('/soham')({
 
 function RouteComponent() {
 	//
+	track('soham');
+
 	if (typeof window !== 'undefined') {
 		window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 	}

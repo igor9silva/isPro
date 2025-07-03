@@ -37,12 +37,6 @@ export function WhatNow() {
 			</p>
 
 			<p>
-				But I must tell you that this is extremely hard to predict. Impossible, to be
-				honest. There are so many variables, so many interactions, so many actors that no
-				one can tell you exactly what will happen nor when.{' '}
-			</p>
-
-			<p>
 				What I can tell you is that I'm <strong>extremely optimistic</strong>.
 			</p>
 

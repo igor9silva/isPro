@@ -144,8 +144,8 @@ export function ItsHappening() {
 			<p>
 				There won't be a day where AI is suddenly capable of replacing your role entirely,
 				but the tasks you do to fulfill your job are quickly getting cheaper and better.
-				Picture how "everyone" has AI assistancy to write e-mails and documents, or how
-				"everyone" have near-perfect translation for ~every language on earth. That affects
+				Picture how ~everyone has AI assistancy to write e-mails and documents, or how
+				~everyone have near-perfect translation for ~every language on earth. That affects
 				everyone everywhere, and{' '}
 				<Link
 					href="https://blog.samaltman.com/productivity#:~:text=Compoundgrowth%20gets,difference%20is%20massive.%C2%A0"

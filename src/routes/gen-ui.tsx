@@ -1,7 +1,7 @@
 import { openai } from '@ai-sdk/openai';
 import { createFileRoute } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
-import { track } from '@vercel/analytics/react';
+import { track } from '@vercel/analytics/server';
 import { generateText } from 'ai';
 import { useState } from 'react';
 import { JSXPreview } from '~/components/ui/jsx-preview';

@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { track } from '@vercel/analytics/react';
+import { track } from '@vercel/analytics/server';
 
 export const Route = createFileRoute('/soham')({
 	component: RouteComponent,

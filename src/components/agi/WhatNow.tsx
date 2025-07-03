@@ -74,13 +74,17 @@ export function WhatNow() {
 				electronic components without a deep understanding of electricity and physics, and
 				so on. All the way up to <strong>the first languages</strong>, around ~100000 years
 				ago. Many generations of humans iterating on their own issues, collaborating for a
-				better future.
+				better future, compounded.
 			</p>
 
 			<p>
-				<strong>Collaboration.</strong> It's what enables us to enter a +100 ton pressurized
-				tin and cruise the planet as if it were the most natural thing in the world, or to
-				speak live with a human orbiting 400km above us, or whatever else blows your mind.
+				<strong>Collaboration.</strong> That's the key.
+			</p>
+
+			<p>
+				It's what enables us to enter a +100 ton pressurized tin and cruise the planet as if
+				it were the most natural thing in the world, or to speak live with a human orbiting
+				400km above us, or whatever else blows your mind.
 			</p>
 
 			<p>
@@ -93,8 +97,9 @@ export function WhatNow() {
 			</p>
 
 			<p>
-				A new, tireless, infinitely replicable new form of intelligence is joining, and that
-				will lead us, humankind, to <strong>infinite productivity</strong>.
+				A new, tireless, infinitely replicable new form of intelligence is iterating
+				together with us — rather than replacing us — and that will lead humankind to{' '}
+				<strong>infinite productivity</strong>.
 			</p>
 
 			<p>

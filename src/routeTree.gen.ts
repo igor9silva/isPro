@@ -9,10 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SohamRouteImport } from './routes/soham'
 import { Route as GenUiRouteImport } from './routes/gen-ui'
 import { Route as AgiRouteImport } from './routes/agi'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SohamRoute = SohamRouteImport.update({
+  id: '/soham',
+  path: '/soham',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GenUiRoute = GenUiRouteImport.update({
   id: '/gen-ui',
   path: '/gen-ui',
@@ -33,34 +39,45 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/agi': typeof AgiRoute
   '/gen-ui': typeof GenUiRoute
+  '/soham': typeof SohamRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/agi': typeof AgiRoute
   '/gen-ui': typeof GenUiRoute
+  '/soham': typeof SohamRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/agi': typeof AgiRoute
   '/gen-ui': typeof GenUiRoute
+  '/soham': typeof SohamRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/agi' | '/gen-ui'
+  fullPaths: '/' | '/agi' | '/gen-ui' | '/soham'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/agi' | '/gen-ui'
-  id: '__root__' | '/' | '/agi' | '/gen-ui'
+  to: '/' | '/agi' | '/gen-ui' | '/soham'
+  id: '__root__' | '/' | '/agi' | '/gen-ui' | '/soham'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AgiRoute: typeof AgiRoute
   GenUiRoute: typeof GenUiRoute
+  SohamRoute: typeof SohamRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/soham': {
+      id: '/soham'
+      path: '/soham'
+      fullPath: '/soham'
+      preLoaderRoute: typeof SohamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/gen-ui': {
       id: '/gen-ui'
       path: '/gen-ui'
@@ -89,6 +106,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AgiRoute: AgiRoute,
   GenUiRoute: GenUiRoute,
+  SohamRoute: SohamRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

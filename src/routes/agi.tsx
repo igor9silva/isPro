@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { track } from '@vercel/analytics';
+import { track } from '@vercel/analytics/react';
 import { Expand, Shrink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { CostSituation } from '~/components/agi/CostSituation';

@@ -44,13 +44,13 @@ function BibTeXCitation({ metadata }: { metadata: ArticleMetadata }) {
 
 	const bibTeX = `
 @article{silva${year}agi,
-  author       = {Silva, Igor},
-  title        = {${metadata.title}},
-  journal      = {igorsilva.pro},
-  year         = {${year}},
-  month        = {${month}},
-  url          = {${metadata.url}},
-  note         = {Accessed: ${accessDate}}
+  author   = {Silva, Igor},
+  title    = {${metadata.title}},
+  journal  = {igorsilva.pro},
+  year     = {${year}},
+  month    = {${month}},
+  url      = {${metadata.url}},
+  note     = {Accessed: ${accessDate}}
 }`.trim();
 
 	return (

@@ -59,6 +59,27 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 		<html>
 			<head>
 				<HeadContent />
+				<script
+					dangerouslySetInnerHTML={{
+						// this is for dark/light mode detection
+						__html: `
+							try {
+								if (typeof window !== 'undefined' && window.matchMedia) {
+									const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+									const updateTheme = (e) => {
+										document.documentElement.classList.toggle('dark', e.matches);
+									};
+
+									// Set initial theme
+									updateTheme(mediaQuery);
+
+									// Listen for changes
+									mediaQuery.addEventListener('change', updateTheme);
+								}
+							} catch (e) {}
+						`,
+					}}
+				/>
 			</head>
 			<body>
 				{children}

@@ -1,0 +1,163 @@
+{
+  "data_limite": "2026-10-31",
+  "source_documents": [
+    {
+      "path": "analysis/report-source/manuscript-v2.json",
+      "sha256": "660cc8d7e80dcf8afd3cf7a8ff504907bb19b8a184e211e1baefdad9b81aefcf"
+    },
+    {
+      "path": "analysis/report-source/technical-appendix-v2.json",
+      "sha256": "a49f2ce5765bc44d28b440460dd4c3f64af2c580aec992157ecc3ac047d26b23"
+    },
+    {
+      "path": "analysis/extensions/biometry-history-v1/report-1793447557822532000/manuscript.json",
+      "sha256": "f3f6bf19296644d9d4bc138691c9fa6311593e3b3bb3991fa5b8d774ae281108"
+    },
+    {
+      "path": "analysis/extensions/biometry-history-v1/report-1793447557822532000/technical-appendix.json",
+      "sha256": "934ff8d6ba5a414a967a51d91766dc3b3af0f461cb92602d8e958cb83cc091ee"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "apendice-biometria.html",
+      "bytes": 25382,
+      "sha256": "5056c3942b7f638a3fe800c7351569fc15e925929312bcac6f7f11dabab180cb"
+    },
+    {
+      "path": "apendice-biometria.pdf",
+      "bytes": 91060,
+      "sha256": "d56280ab5b75797e379d9606c4432ae75ad23eaa00506f76368009465e1e0b29"
+    },
+    {
+      "path": "apendice-tecnico.html",
+      "bytes": 32147,
+      "sha256": "ad86676f4086686b32af3ff72aefedd4b8e2c2cff43c0bbb9e9951f9ccadb963"
+    },
+    {
+      "path": "apendice-tecnico.pdf",
+      "bytes": 92176,
+      "sha256": "5ae46ee4a1b4c62da4bca2a435636333615f77e87df0c84d7ce3cb821ca1e53b"
+    },
+    {
+      "path": "biometria-historico.html",
+      "bytes": 32917,
+      "sha256": "9dd2e3927dc98ac45765c0470a0d2395263fdca53d3508ed80d2059d9f1fa253"
+    },
+    {
+      "path": "biometria-historico.pdf",
+      "bytes": 870791,
+      "sha256": "88eb7afe8ed65bb68a2762014041d2b20ae5fffafd6e27b61bded49294de1a89"
+    },
+    {
+      "path": "comparacao-historica.png",
+      "bytes": 301157,
+      "sha256": "34c6359a3b1a9fa3127d582579dd721d9bcd635257283a381a4262e89bc9f7e6"
+    },
+    {
+      "path": "dados-e-codigo.zip",
+      "bytes": 4361914,
+      "sha256": "e8808683fae310e94a3a3a861c0d667a5d635957ea437b1859d0d565f6383189"
+    },
+    {
+      "path": "figuras/01-perfil-temporal-2026.png",
+      "bytes": 126253,
+      "sha256": "f982fee7742f81565f23732f91acb0344c86820ef499f0446d6bf28e75a219bf"
+    },
+    {
+      "path": "figuras/02-heterogeneidade-uf.png",
+      "bytes": 99106,
+      "sha256": "16937511d34de3535c415e3cc2aba17ae86fa02e7fe3c9c330276c28c806924b"
+    },
+    {
+      "path": "figuras/03-sensibilidade-corte.png",
+      "bytes": 66540,
+      "sha256": "deec4269736150c3657f9bf751fa92bb8ca03d9ccea0c0ce6590c8b6e1f6da1c"
+    },
+    {
+      "path": "figuras/04-limites-margens.png",
+      "bytes": 97432,
+      "sha256": "3c2505a4ee47cc131aaa85f280789ad701b0fbbc028383b454de1d01ce6af7eb"
+    },
+    {
+      "path": "figuras/05-eventos-distintos.png",
+      "bytes": 81180,
+      "sha256": "655640f73cf1fa05abd6b94de5c5b9a7c36cd7747ee26ad15f9f9a70eab7e1c0"
+    },
+    {
+      "path": "figuras/06-comparacoes-historicas.png",
+      "bytes": 83415,
+      "sha256": "5ff042ffd3dcd614fdd29ae81c89d29f5ea9e4c53524e75da5ce27ae89bc31e9"
+    },
+    {
+      "path": "figuras/extreme-history.png",
+      "bytes": 48789,
+      "sha256": "5b5c5498ec2981e9a0f838b571e668e5add12d92e408d51153d57bb2ff906122"
+    },
+    {
+      "path": "figuras/first-digit-history.png",
+      "bytes": 164089,
+      "sha256": "fce9168398a498536e1228992f3ded91ec6f9f5faada41645ff62ec59869e88c"
+    },
+    {
+      "path": "figuras/historical-biometry.png",
+      "bytes": 88768,
+      "sha256": "a4e296ce03bc2f47b9dfbf3be10bc12ca12fc71e6cbe93d68c3889edd100b452"
+    },
+    {
+      "path": "figuras/historical-panel.png",
+      "bytes": 301157,
+      "sha256": "34c6359a3b1a9fa3127d582579dd721d9bcd635257283a381a4262e89bc9f7e6"
+    },
+    {
+      "path": "figuras/historical-prediction.png",
+      "bytes": 45496,
+      "sha256": "d41e13afa0c07e232555c423abe1b1add920e35112c56453fd5d4ef5594902d9"
+    },
+    {
+      "path": "figuras/regional-correlation.png",
+      "bytes": 50554,
+      "sha256": "00a96b5bb20b2a7ff608258e84a7f8a7a3191497a4507e86b3d8db5094190512"
+    },
+    {
+      "path": "index.html",
+      "bytes": 12692,
+      "sha256": "d2732ce257981f78b613beb49de473c99d31361549b98103deab502b104d1391"
+    },
+    {
+      "path": "inventario-fontes.jsonl.gz",
+      "bytes": 629515,
+      "sha256": "ed20475be245da36f892be2e63058df908dbe3f9cbc72de519ef65e13741cb29"
+    },
+    {
+      "path": "perfil-temporal.png",
+      "bytes": 126253,
+      "sha256": "f982fee7742f81565f23732f91acb0344c86820ef499f0446d6bf28e75a219bf"
+    },
+    {
+      "path": "pesquisa.css",
+      "bytes": 7939,
+      "sha256": "e681f9b08537e7d065c68ab0d32cd02c1228b3ade61b27fc490b506c7e92ba11"
+    },
+    {
+      "path": "relatorio.html",
+      "bytes": 47063,
+      "sha256": "fe98482afcf102fb01616cba1f4c90437ff3c1534ec374fac36bf156aa150196"
+    },
+    {
+      "path": "relatorio.pdf",
+      "bytes": 765218,
+      "sha256": "efdeb374479e55012870cfdd1045cfe041c2f86e491cb9a0eb8ea7e0fea7c813"
+    }
+  ],
+  "editorial_changes": [
+    "Retirada de marcações de uso privado e inclusão de navegação pública.",
+    "Explicitação de que o pacote público é reduzido e as fontes podem mudar.",
+    "Referências à preservação de um ZIP convertidas para o tempo da coleta.",
+    "Resultados, tabelas, hipóteses e limites científicos mantidos."
+  ],
+  "inventory_records": 3388,
+  "code_and_data_entries": 212,
+  "bundle_bytes": 4361914,
+  "bundle_sha256": "e8808683fae310e94a3a3a861c0d667a5d635957ea437b1859d0d565f6383189"
+}

@@ -1,0 +1,133 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="https://igorsilva.pro/eleicoes-2026/apendice-biometria.html">
+<title>Apêndice técnico do suplemento histórico e biométrico</title><style>
+body{font-family:Arial,sans-serif;line-height:1.6;color:#172737;max-width:1000px;margin:42px auto;padding:0 28px}
+h1{font-size:32px;line-height:1.2}h2{font-size:23px;margin-top:2.2em;color:#123c52}
+.subtitle{font-size:19px;color:#52636d}.draft{border-left:5px solid #b66b17;padding:14px 18px;background:#fff5e6}
+p{text-align:left}table{border-collapse:collapse;width:100%;font-size:13px;margin-top:14px}
+th{background:#123c52;color:white;text-align:left}td,th{padding:9px;border-bottom:1px solid #d4dfe4}
+tr:nth-child(even){background:#f2f6f8}.note,figcaption{font-size:13px;color:#435864}figure{margin:30px 0}
+svg{max-width:100%;height:auto}a{color:#145e80}.meta{font-size:13px;color:#56636c}
+@media print{body{margin:0;max-width:none;font-size:10pt}h2{break-after:avoid}figure,table{break-inside:avoid}}
+.report-nav{margin-bottom:28px;font-size:15px}.table-scroll{overflow-x:auto}.table-scroll table{min-width:570px}figure img{display:block;max-width:100%;height:auto}a:focus-visible{outline:3px solid #147a70;outline-offset:3px}</style><body><nav class="report-nav" aria-label="Navegação da pesquisa"><a href="/eleicoes-2026/">← Voltar à pesquisa</a></nav>
+<h1>Apêndice técnico do suplemento histórico e biométrico</h1><p class="subtitle">Definições, estimadores, vínculos, hipóteses, revisão e reprodução</p>
+<p class="draft">Extensão exploratória baseada em registros públicos. Revisão interna; não submetida a revisão externa por pares.</p><p class="meta">Base científica concluída em 31 de outubro de 2026.</p>
+<h2>A1. Unidade analítica e integridade</h2>
+<p>Uma observação é UF × município × zona × seção × turno × cargo presidencial, ou prefeito em 2024. Os perfis cadastrais são agregados por UF × município × zona × seção × local. As chaves do BWeb foram verificadas como únicas; a soma independente de linhas nominais por candidato coincide exatamente com o total nominal canônico em todos os cinco anos.</p>
+<p>O campo biométrico é válido se houver um único valor por seção, sem conflito de metadados e entre zero e comparecimento. Valores ausentes ou sentinelas negativos não viram zero. Em 2018 há quatro campos biométricos ausentes no primeiro turno doméstico e três no segundo; em 2014 o campo está ausente em todo o esquema. O exterior é separado; sentinelas negativos de 2022 e um caso municipal de 2024 estão nas tabelas de cobertura.</p>
+<h2>A2. Perfil cadastral e denominadores</h2>
+<p>Leitura dos 84 arquivos já aprovados com Range e If-Match, conferência de tamanho/ETag do inventário e CRC integral do membro CSV. Processamento em blocos de 150 mil linhas, três leitores, sem gravação dos ZIPs brutos. Os totais são soma de QT_ELEITORES_PERFIL ou QT_ELEITORES conforme o ano; QT_ELEITORES_BIOMETRIA é agregado separadamente.</p>
+<p>Idade &gt;=60 usa o limite inferior do rótulo da faixa etária, incluindo 100 anos ou mais; rótulos não numéricos permanecem desconhecidos. Baixa escolaridade reúne códigos 1, 2 e 3 (analfabetismo, lê/escreve e fundamental incompleto), com todos os cadastrados no denominador. O código 0 de escolaridade, não informado, permanece nesse denominador, mas não foi somado separadamente. O campo auxiliar originalmente chamado education_unknown conta apenas códigos negativos e foi renomeado education_negative_code na camada vinculada; não se afirma que mede toda a escolaridade desconhecida. Esse campo não é controle dos modelos. Gênero também não foi necessário na especificação principal. Ambiguidade de chave por locais múltiplos é excluída com contagem explícita.</p>
+<p>Os cabeçalhos dos perfis de 2018 registram geração em 12/04/2021; os de 2022, em 12/07/2022 ou 26/08/2022; os de 2026, em 14/07/2026. São datas de geração dos produtos arquivados, não prova da data de cada atualização cadastral nem de disponibilidade pública naquele instante. A análise não os apresenta como cópias necessariamente congeladas no dia de cada eleição.</p>
+<p>O perfil se refere aos aptos na data de geração, não aos comparecentes. O quociente de não autenticação pelos cadastrados biométricos é apenas uma razão entre produtos, não estimador da probabilidade de falha. Casos em que a contagem excede o cadastro são uma advertência de incompatibilidade, não diagnóstico automático de voto indevido.</p>
+<p>Na ligação estrita do segundo turno há 7.452 dessas incompatibilidades em 2018, 1.088 em 2022 e uma em 2026. A causa administrativa não foi estabelecida. Excluindo apenas esses vínculos dos modelos com perfil, a associação por +10 pontos percentuais na taxa passa a +0,436; -0,325; +0,020 ponto percentual no voto, respectivamente, com peso igual. As estimativas originais, os vínculos excluídos e os intervalos da sensibilidade foram preservados. A contagem BWeb original não foi alterada.</p>
+<h3>Tabela A1. Vinculação dos perfis cadastrais</h3><div class="table-scroll"><table><thead><tr><th>Ano</th><th>Restrição</th><th>Seções</th><th>Cobertura comparec.</th><th>Contagem &gt; cadastrados</th><th>Cadastro zero / contagem positiva</th></tr></thead><tbody>
+<tr><td>2018</td><td>Código</td><td>453.350</td><td>99,967%</td><td>9.035</td><td>466</td></tr>
+<tr><td>2018</td><td>Local + aptos ±1%</td><td>423.529</td><td>93,588%</td><td>7.452</td><td>261</td></tr>
+<tr><td>2022</td><td>Código</td><td>470.674</td><td>99,965%</td><td>1.564</td><td>42</td></tr>
+<tr><td>2022</td><td>Local + aptos ±1%</td><td>407.160</td><td>86,389%</td><td>1.088</td><td>26</td></tr>
+<tr><td>2026</td><td>Código</td><td>497.508</td><td>99,958%</td><td>35</td><td>0</td></tr>
+<tr><td>2026</td><td>Local + aptos ±1%</td><td>430.528</td><td>86,738%</td><td>1</td><td>0</td></tr>
+</tbody></table></div><p class="note">Perfil refere-se a elegíveis cadastrados, BWeb a pessoas que compareceram. Migração cadastral, BIOEX, agregação e datas podem produzir incompatibilidades. Casos são contabilizados e não classificados automaticamente como fraude. A taxa condicional entre votantes com biometria permanece não observada.</p>
+<h2>A3. Correlações e efeitos fixos</h2>
+<p>Pearson usa desvios em torno da média; a versão ponderada usa comparecimento. Spearman é Pearson dos postos médios. Para relações internas ao município, subtraem-se as médias municipais; o Spearman interno é a correlação dos postos desses desvios, não uma média de Spearmans municipais. Sem variação ou sem observações suficientes, não se força coeficiente.</p>
+<p>A regressão descritiva utiliza transformação interna ponderada quando cabível. O coeficiente de taxa biométrica é multiplicado por 10 para expressar pontos percentuais no voto por aumento de 10 pontos percentuais na taxa. Os intervalos empregam matriz sanduíche agrupada, correção de graus de liberdade que inclui efeitos municipais e quantil t com número de grupos menos um. A versão agrupada por UF mantém a mesma transformação municipal e usa 27 grupos.</p>
+<p>Esses intervalos requerem hipóteses de erro do modelo e independência entre os grupos adotados; 27 UFs não garantem bom comportamento assintótico em qualquer desenho. Não há seleção de significância, ajustes de múltiplos testes usados para declarar fraude nem interpretação amostral das contagens censitárias. Resultados exploratórios, pesos e especificações são publicados integralmente.  [<a href="#ref-S4">S4</a>]</p>
+<h2>A3b. Heterogeneidade regional ajustada</h2>
+<p>O ajuste nacional pode ocultar relações regionais em sentidos opostos. A tabela apresenta todas as UFs, sem filtrar os intervalos que excluem zero. A estrutura de dependência e os confundidores variam entre regiões; um intervalo estreito não atribui causalidade.</p>
+<h3>Tabela A2. Modelos com perfis em todas as UFs, segundo turno de 2026</h3><div class="table-scroll"><table><thead><tr><th>UF</th><th>Seções</th><th>Municípios</th><th>p.p. no voto / +10 p.p. na taxa</th><th>Intervalo por município</th></tr></thead><tbody>
+<tr><td>AC</td><td>1.661</td><td>22</td><td>1,703</td><td>[-0,362; 3,768]</td></tr>
+<tr><td>AL</td><td>6.435</td><td>102</td><td>0,615</td><td>[0,144; 1,085]</td></tr>
+<tr><td>AM</td><td>5.351</td><td>62</td><td>0,305</td><td>[-1,511; 2,122]</td></tr>
+<tr><td>AP</td><td>1.636</td><td>16</td><td>1,079</td><td>[-0,770; 2,929]</td></tr>
+<tr><td>BA</td><td>29.185</td><td>417</td><td>-0,003</td><td>[-0,283; 0,277]</td></tr>
+<tr><td>CE</td><td>19.781</td><td>184</td><td>0,676</td><td>[0,301; 1,052]</td></tr>
+<tr><td>DF</td><td>5.420</td><td>1</td><td>0,559</td><td>Não calculável: um grupo</td></tr>
+<tr><td>ES</td><td>8.965</td><td>78</td><td>0,445</td><td>[-0,270; 1,161]</td></tr>
+<tr><td>GO</td><td>14.326</td><td>246</td><td>0,266</td><td>[-0,200; 0,732]</td></tr>
+<tr><td>MA</td><td>15.290</td><td>217</td><td>0,755</td><td>[0,267; 1,244]</td></tr>
+<tr><td>MG</td><td>45.404</td><td>853</td><td>0,053</td><td>[-0,258; 0,364]</td></tr>
+<tr><td>MS</td><td>6.167</td><td>79</td><td>-1,056</td><td>[-2,137; 0,025]</td></tr>
+<tr><td>MT</td><td>6.297</td><td>140</td><td>0,146</td><td>[-1,042; 1,334]</td></tr>
+<tr><td>PA</td><td>17.973</td><td>144</td><td>0,181</td><td>[-0,476; 0,839]</td></tr>
+<tr><td>PB</td><td>9.111</td><td>223</td><td>0,556</td><td>[0,137; 0,976]</td></tr>
+<tr><td>PE</td><td>18.824</td><td>185</td><td>0,555</td><td>[0,205; 0,905]</td></tr>
+<tr><td>PI</td><td>8.011</td><td>224</td><td>0,106</td><td>[-0,351; 0,563]</td></tr>
+<tr><td>PR</td><td>23.982</td><td>399</td><td>-0,248</td><td>[-0,720; 0,223]</td></tr>
+<tr><td>RJ</td><td>32.860</td><td>92</td><td>1,332</td><td>[0,295; 2,369]</td></tr>
+<tr><td>RN</td><td>6.492</td><td>167</td><td>0,353</td><td>[-0,230; 0,936]</td></tr>
+<tr><td>RO</td><td>3.519</td><td>52</td><td>-1,475</td><td>[-2,769; -0,182]</td></tr>
+<tr><td>RR</td><td>1.229</td><td>15</td><td>1,077</td><td>[-2,190; 4,345]</td></tr>
+<tr><td>RS</td><td>25.503</td><td>497</td><td>-1,162</td><td>[-1,575; -0,749]</td></tr>
+<tr><td>SC</td><td>15.832</td><td>294</td><td>-0,472</td><td>[-0,857; -0,087]</td></tr>
+<tr><td>SE</td><td>4.730</td><td>75</td><td>0,303</td><td>[-0,530; 1,136]</td></tr>
+<tr><td>SP</td><td>92.908</td><td>645</td><td>-0,120</td><td>[-0,357; 0,117]</td></tr>
+<tr><td>TO</td><td>3.636</td><td>139</td><td>-0,345</td><td>[-1,322; 0,633]</td></tr>
+</tbody></table></div><p class="note">Mesma especificação estrita com cadastro, idade, escolaridade e controles operacionais; pesos iguais por seção. Exploração de heterogeneidade sem inferência causal e sem seleção de significância. No DF há um único grupo municipal; o intervalo agrupado por município não é identificável por essa fórmula.</p>
+<h2>A4. Ligação histórica e seleção</h2>
+<p>A ligação principal usa identidade de códigos. Para estabilidade adicional, exige-se o mesmo local e a mesma lista de seções agregadas, normalizada como conjunto ordenado de inteiros; depois, diferença relativa de aptos de no máximo 5%. Essa sensibilidade já era exploratória no estudo principal. Nesta extensão, a normalização de zeros à esquerda foi registrada antes de recalcular os subconjuntos.</p>
+<p>O vínculo exato não implica os mesmos indivíduos e pode sofrer reorganizações não observadas; o subconjunto estável não é representativo automaticamente. Por isso são publicadas as perdas em seções e a fração do comparecimento posterior coberto. A verificação municipal usa somas de votos e comparecimento, não média simples das porcentagens das seções.</p>
+<h3>Tabela A3. Sensibilidade da persistência eleitoral</h3><div class="table-scroll"><table><thead><tr><th>Anos</th><th>Restrição</th><th>Seções</th><th>Cobertura posterior</th><th>Pearson PT</th></tr></thead><tbody>
+<tr><td>2018 → 2022</td><td>exact_key</td><td>437.178</td><td>93,63%</td><td>0,9498</td></tr>
+<tr><td>2018 → 2022</td><td>same_place_aggregation</td><td>404.703</td><td>86,93%</td><td>0,9490</td></tr>
+<tr><td>2018 → 2022</td><td>stable_electorate_5pct</td><td>175.011</td><td>38,97%</td><td>0,9466</td></tr>
+<tr><td>2022 → 2026</td><td>exact_key</td><td>460.290</td><td>93,46%</td><td>0,9726</td></tr>
+<tr><td>2022 → 2026</td><td>same_place_aggregation</td><td>428.343</td><td>87,43%</td><td>0,9727</td></tr>
+<tr><td>2022 → 2026</td><td>stable_electorate_5pct</td><td>199.267</td><td>42,05%</td><td>0,9728</td></tr>
+</tbody></table></div><p class="note">Listas de seções agregadas foram comparadas por identidade numérica, retirando zeros à esquerda. A primeira rodada, que retinha a grafia original, foi preservada. Em 2014 falta informação comparável de local para a restrição entre anos; ausência de vínculo sob esse critério não significa ausência de seção.</p>
+<h2>A5. Primeiras diferenças e previsão</h2>
+<p>A especificação de mudanças inclui diferença na taxa biométrica, participação anterior do PT, diferença no comparecimento e no log dos aptos, com efeitos municipais. Ela mede associação e pode sofrer regressão à média e erros de mensuração correlacionados. Não foi tratada como efeito de tratamento.</p>
+<p>A predição usa cinco grupos de municípios, definidos deterministicamente por SHA256 de semente 20261031, UF e código municipal. OLS ou WLS é ajustado nos quatro grupos restantes. Os modelos são cumulativos e os erros são avaliados nas mesmas seções para comparabilidade. Todas as 277 predições lineares fora de 0-1 no modelo final de peso igual foram preservadas e contadas; não houve truncamento seletivo.</p>
+<p>A revisão encontrou 6.668 seções do DF cuja UF inteira fica fora do treino na partição 1; seu efeito estadual não pode ser aprendido nesse ajuste. As predições originais foram mantidas. Avaliando apenas as 453.622 seções com UF representada no treino, o RMSE dos quatro modelos de peso igual é 3,7665; 2,4164; 2,3695; 2,3691 pontos percentuais. O incremento contemporâneo permanece pequeno. Essa revisão de suporte foi registrada como exploratória após as predições iniciais e não escolheu uma nova partição.</p>
+<h3>Tabela A4. Mudanças de 2022 a 2026, comparação interna ao município</h3><div class="table-scroll"><table><thead><tr><th>Restrição</th><th>Seções</th><th>p.p. no voto / +10 p.p. na taxa</th><th>Intervalo de modelo</th></tr></thead><tbody>
+<tr><td>exact_key</td><td>460.290</td><td>-0,0071</td><td>[-0,0399; 0,0257]</td></tr>
+<tr><td>same_place_aggregation</td><td>428.343</td><td>-0,0203</td><td>[-0,0517; 0,0110]</td></tr>
+<tr><td>stable_electorate_5pct</td><td>199.267</td><td>-0,0186</td><td>[-0,0568; 0,0197]</td></tr>
+</tbody></table></div><p class="note">Regressão da mudança do voto sobre mudança da taxa, voto anterior, mudança no comparecimento e log do eleitorado; efeitos municipais. Pode haver erro de mensuração, mudanças demográficas e confundidores. Não é diferenças-em-diferenças causal.</p>
+<h2>A6. Extremos e primeiro dígito</h2>
+<p>Unanimidade exige votos do candidato iguais ao total nominal positivo da seção. Mais de 90% usa desigualdade estrita; pelo menos 90% inclui o ponto de fronteira. As análises de tamanho mínimo usam &gt;=1 e &gt;=10 votos nominais. O cálculo ilustrativo binomial soma p_s elevado a n_s, onde p_s é a preferência dos demais votos do município ou zona, excluindo a própria seção.</p>
+<p>O modelo binomial impõe independência e homogeneidade que os dados eleitorais não asseguram. Exceder sua expectativa não diferencia segregação territorial, comunidades politicamente homogêneas, mobilização e irregularidade. Os excessos observados foram publicados mesmo quando enfraquecem uma explicação simples de regularidade.</p>
+<p>Para Benford, o primeiro dígito de cada contagem positiva é comparado a log10(1+1/d), d de 1 a 9. O MAD é a média dos desvios absolutos em frequência relativa. Há uma sensibilidade que remove contagens menores que 10. Não foi calculado um p-valor interpretado como probabilidade de fraude; a distribuição nula e a independência não foram estabelecidas.  [<a href="#ref-S3">S3</a>, <a href="#ref-S5">S5</a>]</p>
+<p>A simulação usa Binomial(n_s,p_s), n_s igual aos votos nominais da seção e p_s igual à participação do PT no resto do município. O adversário recebe o complemento n_s menos o sorteio do PT. Cinco repetições por ano usam SeedSequence([20261031,ano,réplica]); os intervalos de mínimos e máximos na tabela são variação dessas cinco simulações, não intervalos de confiança.</p>
+<h3>Tabela A5. Modelo artificial de contagens por seção</h3><div class="table-scroll"><table><thead><tr><th>Ano</th><th>Candidato</th><th>MAD de primeiro dígito</th><th>Seções unânimes simuladas</th></tr></thead><tbody>
+<tr><td>2014</td><td>PT</td><td>0,0824 a 0,0827</td><td>5 a 7</td></tr>
+<tr><td>2014</td><td>Adversário</td><td>0,0535 a 0,0537</td><td>5 a 9</td></tr>
+<tr><td>2018</td><td>PT</td><td>0,0542 a 0,0544</td><td>2 a 6</td></tr>
+<tr><td>2018</td><td>Adversário</td><td>0,0616 a 0,0618</td><td>0 a 4</td></tr>
+<tr><td>2022</td><td>PT</td><td>0,0864 a 0,0864</td><td>0 a 2</td></tr>
+<tr><td>2022</td><td>Adversário</td><td>0,0746 a 0,0748</td><td>0 a 0</td></tr>
+<tr><td>2026</td><td>PT</td><td>0,0845 a 0,0846</td><td>0 a 2</td></tr>
+<tr><td>2026</td><td>Adversário</td><td>0,0778 a 0,0779</td><td>0 a 0</td></tr>
+</tbody></table></div><p class="note">Cinco simulações binomiais com semente fixa, tamanhos observados e proporção municipal calculada sem a própria seção. Não se introduz operação de adulteração. Não é modelo validado de eleição limpa, pois condiciona nos dados observados e supõe homogeneidade que falha nos extremos.</p>
+<h2>A6b. Comparação temporal histórica</h2>
+<p>O horário de fechamento é normalizado pelo prazo da eleição e do município. A transformação asinh preserva ordenação e reduz o peso de extremos. A tabela compara associação, não o número de votos depositados tarde. A reconstrução por eventos de conclusão de voto permanece no estudo principal.</p>
+<h3>Tabela A6. Encerramento e voto no PT nos segundos turnos</h3><div class="table-scroll"><table><thead><tr><th>Ano</th><th>Seções</th><th>Pearson nacional</th><th>Pearson no município</th><th>Spearman nacional</th></tr></thead><tbody>
+<tr><td>2018</td><td>453.673</td><td>0,0162</td><td>0,0308</td><td>0,0304</td></tr>
+<tr><td>2022</td><td>471.000</td><td>0,0502</td><td>0,0251</td><td>0,0581</td></tr>
+<tr><td>2026</td><td>497.897</td><td>0,1127</td><td>0,0084</td><td>0,1314</td></tr>
+</tbody></table></div><p class="note">Atraso normalizado pelo prazo ordinário, transformado por asinh em minutos. Em 2018 o prazo doméstico era 17h local; em 2022/2026, 17h de Brasília com conversão municipal. Encerramento não é horário do último voto nem exposição causal à extensão.</p>
+<h2>A6c. Definição da correlação biométrica</h2>
+<p>A alegação de correlação nas páginas públicas não é acompanhada de código ou tabela que fixe todas as unidades e denominadores. Para não refutar uma definição e omitir outra, foram calculadas quatro combinações: contagem com contagem, taxa com proporção, contagem com proporção e taxa com contagem. A correlação de resíduos lineares pelo comparecimento é um diagnóstico adicional de escala, sem substituir a análise geográfica. Essa extensão metodológica foi registrada antes desses cálculos.</p>
+<h3>Tabela A7. Quantidades e taxas respondem a perguntas diferentes</h3><div class="table-scroll"><table><thead><tr><th>Ano</th><th>Seções</th><th>Contagens brutas</th><th>Taxa e proporção</th><th>Contagens ajustadas por comparecimento</th></tr></thead><tbody>
+<tr><td>2018</td><td>453.703</td><td>0,2184</td><td>0,1691</td><td>0,1823</td></tr>
+<tr><td>2022</td><td>471.010</td><td>0,1275</td><td>0,1562</td><td>0,1113</td></tr>
+<tr><td>2026</td><td>497.897</td><td>0,1580</td><td>0,0684</td><td>0,0542</td></tr>
+</tbody></table></div><p class="note">Segundo turno doméstico, Pearson. Contagens: não autenticados versus votos PT. Taxas: não autenticados/comparecimento versus votos PT/válidos. Última coluna: resíduos das duas contagens após regressão linear separada sobre comparecimento, com intercepto. Não é correção causal nem estimativa de irregularidade.</p>
+<h2>A7. Limites para margens: mecanismos diferentes</h2>
+<p>No estudo principal, o limite se refere a participantes adicionais após determinado corte, com incertezas de horário/contexto e dados faltantes. Nesta extensão, o envelope biométrico é uma pergunta hipotética distinta, que admite qualquer subconjunto dos não autenticados como indevido e adicional, sem alterar votos dos demais.</p>
+<p>Se M é a margem presidencial observada, B_s o total não autenticado, W_s e L_s os votos do vencedor e adversário, então a margem sem um subconjunto hipotético está entre M - soma min(B_s,W_s) e M + soma min(B_s,L_s). As pessoas adicionais podem votar nulo ou branco; não é necessário imputar candidato individual. Os extremos são possíveis sob essas restrições, não estimados como ocorridos.</p>
+<p>O intervalo biométrico cruza zero, mas usa uma hipótese sem observação de quais casos seriam indevidos. Ele não contradiz o limite temporal porque trata de mecanismo e população diferentes. Um participante adicional muda a margem por no máximo um voto; troca de escolha de um eleitor já existente é outro mecanismo e não foi misturada ao cálculo.</p>
+<h2>A8. Reprodução, revisão e lacunas</h2>
+<p>A sequência executável é: biometry_history_extension.py; review_biometry_history.py; extract_biometry_profiles.py; analyze_biometry_profile_controls.py; simulate_biometry_digit_reference.py; check_biometry_count_definitions.py; review_biometry_prediction_coverage.py; review_profile_count_compatibility.py; plot_biometry_history.py; review_biometry_extension_final.py; build_biometry_history_report.py; document_biometry_extension.py. A extração depende dos arquivos originais, do inventário auditado e dos derivados por seção. O pacote público reúne código, tabelas agregadas e inventário, mas não contém os grandes arquivos nem todos os derivados intermediários; a reprodução integral exige obtê-los separadamente.</p>
+<p>O ambiente e as versões constam de requirements-analysis.txt e do guia de reprodução. Entradas, saídas, planos, alterações, scripts, tabelas e documentos recebem SHA256. O relatório possui revisão numérica independente por operações pandas, testes sintéticos da estatística e da agregação de perfis, verificação das figuras e conferência visual de todas as páginas antes da entrega.</p>
+<p>A revisão é interna, sem alegação de parecer independente externo. Não se consultaram cadernos assinados ou atas de todas as seções, não se validou a identidade de cada comparecente e não se recuperou o horário de comunicação judicial por seção. O anexo técnico do post não fornece, nas páginas acessíveis, código, estimativas completas ou um modelo de dados que elimine essas lacunas.  [<a href="#ref-S8">S8</a>, <a href="#ref-S9">S9</a>]</p>
+<h2>Fontes citadas</h2>
+<p id="ref-S1"><b>S1.</b> <a href="https://www.tse.jus.br/legislacao/compilada/res/2026/resolucao-no-23-751-de-26-de-fevereiro-de-2026">TSE. Resolução 23.751/2026, identificação do eleitor e fluxo de votação.</a></p>
+<p id="ref-S2"><b>S2.</b> <a href="https://www.justicaeleitoral.jus.br/biometria/">Justiça Eleitoral. Identificação biométrica, histórico e BIOEX.</a></p>
+<p id="ref-S3"><b>S3.</b> <a href="https://www.umich.edu/~wmebane/inapB.pdf">Mebane (2020). Inappropriate Applications of Benford’s Law Regularities to Some Data from the 2020 Presidential Election in the United States.</a></p>
+<p id="ref-S4"><b>S4.</b> <a href="https://www.econ.ucdavis.edu/faculty/cameron/research/Cameron_Miller_JHR_2014_July_09.pdf">Cameron e Miller (2015). A Practitioner’s Guide to Cluster-Robust Inference. Journal of Human Resources 50(2); versão de trabalho arquivada.</a></p>
+<p id="ref-S5"><b>S5.</b> <a href="https://doi.org/10.1093/pan/mpr014">Deckert, Myagkov e Ordeshook (2011). Benford’s Law and the Detection of Election Fraud. Political Analysis 19, 245-268.</a></p>
+<p id="ref-S6"><b>S6.</b> <a href="https://dadosabertos.tse.jus.br/dataset/resultados-2026-boletim-de-urna">TSE. Boletins de urna de 2026; mesmos catálogos oficiais de 2014, 2018 e 2022 constam dos manifestos.</a></p>
+<p id="ref-S7"><b>S7.</b> <a href="https://dadosabertos.tse.jus.br/dataset/eleitorado-2026">TSE. Perfil do eleitorado de 2026; perfis de 2018 e 2022 também processados.</a></p>
+<p id="ref-S8"><b>S8.</b> <a href="https://x.com/Youvebeenpwned_/status/2115548464222482516">Relatório #2 publicado por @Youvebeenpwned_, páginas 1-4. Fonte da alegação, não da mensuração independente.</a></p>
+<p id="ref-S9"><b>S9.</b> <a href="https://x.com/Youvebeenpwned_/status/2115548501861884315">Continuação do relatório, páginas 5-7 e anexo técnico.</a></p>
+</body></html>

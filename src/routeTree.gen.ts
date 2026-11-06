@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SohamRouteImport } from './routes/soham'
 import { Route as GenUiRouteImport } from './routes/gen-ui'
+import { Route as Eleicoes2026RouteImport } from './routes/eleicoes-2026'
 import { Route as AgiRouteImport } from './routes/agi'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -22,6 +23,11 @@ const SohamRoute = SohamRouteImport.update({
 const GenUiRoute = GenUiRouteImport.update({
   id: '/gen-ui',
   path: '/gen-ui',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Eleicoes2026Route = Eleicoes2026RouteImport.update({
+  id: '/eleicoes-2026',
+  path: '/eleicoes-2026',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AgiRoute = AgiRouteImport.update({
@@ -38,12 +44,14 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/agi': typeof AgiRoute
+  '/eleicoes-2026': typeof Eleicoes2026Route
   '/gen-ui': typeof GenUiRoute
   '/soham': typeof SohamRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/agi': typeof AgiRoute
+  '/eleicoes-2026': typeof Eleicoes2026Route
   '/gen-ui': typeof GenUiRoute
   '/soham': typeof SohamRoute
 }
@@ -51,20 +59,22 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/agi': typeof AgiRoute
+  '/eleicoes-2026': typeof Eleicoes2026Route
   '/gen-ui': typeof GenUiRoute
   '/soham': typeof SohamRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/agi' | '/gen-ui' | '/soham'
+  fullPaths: '/' | '/agi' | '/eleicoes-2026' | '/gen-ui' | '/soham'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/agi' | '/gen-ui' | '/soham'
-  id: '__root__' | '/' | '/agi' | '/gen-ui' | '/soham'
+  to: '/' | '/agi' | '/eleicoes-2026' | '/gen-ui' | '/soham'
+  id: '__root__' | '/' | '/agi' | '/eleicoes-2026' | '/gen-ui' | '/soham'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AgiRoute: typeof AgiRoute
+  Eleicoes2026Route: typeof Eleicoes2026Route
   GenUiRoute: typeof GenUiRoute
   SohamRoute: typeof SohamRoute
 }
@@ -83,6 +93,13 @@ declare module '@tanstack/react-router' {
       path: '/gen-ui'
       fullPath: '/gen-ui'
       preLoaderRoute: typeof GenUiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/eleicoes-2026': {
+      id: '/eleicoes-2026'
+      path: '/eleicoes-2026'
+      fullPath: '/eleicoes-2026'
+      preLoaderRoute: typeof Eleicoes2026RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/agi': {
@@ -105,6 +122,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AgiRoute: AgiRoute,
+  Eleicoes2026Route: Eleicoes2026Route,
   GenUiRoute: GenUiRoute,
   SohamRoute: SohamRoute,
 }
